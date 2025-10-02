@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Remotely.Server.Auth;
-using Remotely.Server.Extensions;
-using Remotely.Server.Services;
-using Remotely.Shared.Extensions;
-using Remotely.Shared.Models;
-using Remotely.Shared.Services;
+using RaefTech.Server.Auth;
+using RaefTech.Server.Extensions;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Extensions;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Services;
 using System.Text;
 using FileIO = System.IO.File;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -177,7 +177,7 @@ public class ClientDownloadsController : ControllerBase
                     {
                         var effectiveScheme = settings.ForceClientHttps ? "https" : Request.Scheme;
 
-                        var filePath = Path.Combine(_hostEnv.WebRootPath, "Content", "Install-Remotely.ps1");
+                        var filePath = Path.Combine(_hostEnv.WebRootPath, "Content", "Install-RaefTech.ps1");
                         if (!FileIO.Exists(filePath))
                         {
                             return NotFound();
@@ -198,7 +198,7 @@ public class ClientDownloadsController : ControllerBase
                         fileContents[orgIndex] = $"[string]$Organization = \"{organizationId}\"";
                         var fileBytes = Encoding.UTF8.GetBytes(string.Join("\n", fileContents));
 
-                        return File(fileBytes, "application/octet-stream", "Install-Remotely.ps1");
+                        return File(fileBytes, "application/octet-stream", "Install-RaefTech.ps1");
                     }
                 case "ManjaroInstaller-x64":
                     {

@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 using System.Linq;
 using System.Management.Automation;
 
-namespace Remotely.Agent.Extensions;
+namespace RaefTech.Agent.Extensions;
 
 public static class PowerShellCompletionExtensions
 {

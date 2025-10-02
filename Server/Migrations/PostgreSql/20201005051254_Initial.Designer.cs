@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Remotely.Server.Data;
+using RaefTech.Server.Data;
 
-namespace Remotely.Server.Migrations.PostgreSql
+namespace RaefTech.Server.Migrations.PostgreSql
 {
     [DbContext(typeof(PostgreSqlDbContext))]
     [Migration("20201005051254_Initial")]
@@ -136,7 +136,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .IsUnique()
                         .HasName("UserNameIndex");
 
-                    b.ToTable("RemotelyUsers");
+                    b.ToTable("RaefTechUsers");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
@@ -549,7 +549,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                     b.ToTable("PermissionLinks");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -576,7 +576,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
                     b.HasIndex("UserName");
 
-                    b.HasDiscriminator().HasValue("RemotelyUser");
+                    b.HasDiscriminator().HasValue("RaefTechUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -640,7 +640,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .WithMany("Alerts")
                         .HasForeignKey("OrganizationID");
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "User")
                         .WithMany("Alerts")
                         .HasForeignKey("UserID");
                 });
@@ -704,15 +704,15 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .WithMany("PermissionLinks")
                         .HasForeignKey("DeviceGroupID");
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "User")
                         .WithMany("PermissionLinks")
                         .HasForeignKey("UserID");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Models.Organization", "Organization")
-                        .WithMany("RemotelyUsers")
+                        .WithMany("RaefTechUsers")
                         .HasForeignKey("OrganizationID");
                 });
 #pragma warning restore 612, 618

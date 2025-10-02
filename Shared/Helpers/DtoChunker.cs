@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Models.Dtos;
+﻿using RaefTech.Shared.Models.Dtos;
 using MessagePack;
 using Microsoft.Extensions.Caching.Memory;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Shared.Helpers;
+namespace RaefTech.Shared.Helpers;
 
 public static class DtoChunker
 {

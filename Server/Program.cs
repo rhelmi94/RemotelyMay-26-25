@@ -1,4 +1,4 @@
-using Remotely.Server.Extensions;
+using RaefTech.Server.Extensions;
 using Bitbound.SimpleMessenger;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -10,20 +10,20 @@ using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
-using Remotely.Server.Auth;
-using Remotely.Server.Components.Account;
-using Remotely.Server.Data;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models;
-using Remotely.Server.Options;
-using Remotely.Server.Services;
-using Remotely.Server.Services.Stores;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Services;
+using RaefTech.Server.Auth;
+using RaefTech.Server.Components.Account;
+using RaefTech.Server.Data;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models;
+using RaefTech.Server.Options;
+using RaefTech.Server.Services;
+using RaefTech.Server.Services.Stores;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Services;
 using Serilog;
 using System.Net;
 using RatePolicyNames = Remotely.Server.RateLimiting.PolicyNames;
-using Remotely.Server.Filters;
+using RaefTech.Server.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -104,7 +104,7 @@ builder.Services.AddAuthentication(options =>
 })
     .AddIdentityCookies();
 
-services.AddIdentityCore<RemotelyUser>(options =>
+services.AddIdentityCore<RaefTechUser>(options =>
 {
     options.Stores.MaxLengthForKeys = 128;
     options.Password.RequireNonAlphanumeric = false;
@@ -116,7 +116,7 @@ services.AddIdentityCore<RemotelyUser>(options =>
 services.AddScoped<IAuthorizationHandler, TwoFactorRequiredHandler>();
 services.AddScoped<IAuthorizationHandler, OrganizationAdminRequirementHandler>();
 services.AddScoped<IAuthorizationHandler, ServerAdminRequirementHandler>();
-services.AddSingleton<IEmailSender<RemotelyUser>, IdentityNoOpEmailSender>();
+services.AddSingleton<IEmailSender<RaefTechUser>, IdentityNoOpEmailSender>();
 
 services.AddAuthorization(options =>
 {
@@ -220,7 +220,7 @@ if (builder.Environment.IsDevelopment())
 }
 else
 {
-    services.AddScoped<IEmailSender<RemotelyUser>, EmailSenderEx>();
+    services.AddScoped<IEmailSender<RaefTechUser>, EmailSenderEx>();
     services.AddScoped<IEmailSenderEx, EmailSenderEx>();
 }
 services.AddSingleton<IAppDbFactory, AppDbFactory>();

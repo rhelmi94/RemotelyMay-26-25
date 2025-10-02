@@ -1,11 +1,11 @@
-﻿using Remotely.Shared.Models;
+﻿using RaefTech.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Remotely.Desktop.Core.Interfaces
+namespace RaefTech.Desktop.Core.Interfaces
 {
     public interface IConfigService
     {

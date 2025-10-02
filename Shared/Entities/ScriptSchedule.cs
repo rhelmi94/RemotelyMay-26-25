@@ -1,15 +1,15 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace Remotely.Shared.Entities;
+namespace RaefTech.Shared.Entities;
 
 public class ScriptSchedule
 {
     public DateTimeOffset CreatedAt { get; set; }
 
     [JsonIgnore]
-    public RemotelyUser? Creator { get; set; }
+    public RaefTechUser? Creator { get; set; }
 
     public string CreatorId { get; set; } = null!;
 

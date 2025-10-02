@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Primitives;
-using Remotely.Shared.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Primitives;
+using RaefTech.Shared.Services;
 using System.Diagnostics;
 using System.Net.Http.Json;
 
-namespace Remotely.Desktop.Shared.Services;
+namespace RaefTech.Desktop.Shared.Services;
 
 public interface IBrandingProvider
 {
@@ -59,7 +59,7 @@ public class BrandingProvider : IBrandingProvider
 
         if (_brandingInfo.Icon is not { Length: > 0 })
         {
-            using var mrs = typeof(BrandingProvider).Assembly.GetManifestResourceStream("Remotely.Desktop.Shared.Assets.Remotely_Icon.png");
+            using var mrs = typeof(BrandingProvider).Assembly.GetManifestResourceStream("Remotely.Desktop.Shared.Assets.RaefTech_Icon.png");
             using var ms = new MemoryStream();
             mrs!.CopyTo(ms);
 

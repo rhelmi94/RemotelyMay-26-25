@@ -1,6 +1,6 @@
-﻿using Remotely.Desktop.Core.Interfaces;
-using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Desktop.Core.Interfaces;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,7 +11,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public class ChatHostService : IChatClientService
     {

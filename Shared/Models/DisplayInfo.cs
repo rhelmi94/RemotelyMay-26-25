@@ -2,7 +2,7 @@
 using System.Numerics;
 using System.Runtime.Serialization;
 
-namespace Remotely.Shared.Models;
+namespace RaefTech.Shared.Models;
 
 [DataContract]
 public class DisplayInfo

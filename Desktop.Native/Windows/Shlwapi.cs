@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Remotely.Desktop.Native.Windows;
+namespace RaefTech.Desktop.Native.Windows;
 
 // https://docs.microsoft.com/en-us/windows/win32/api/shlwapi/nf-shlwapi-isos
 public class Shlwapi

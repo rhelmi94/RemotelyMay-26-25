@@ -1,10 +1,10 @@
-﻿using Remotely.Desktop.Core.Interfaces;
-using Remotely.Desktop.Core.Models;
-using Remotely.Desktop.Core.ViewModels;
-using Remotely.Shared.Utilities;
-using Remotely.Shared.Models;
-using Remotely.Shared.Models.RemoteControlDtos;
-using Remotely.Shared.Win32;
+﻿using RaefTech.Desktop.Core.Interfaces;
+using RaefTech.Desktop.Core.Models;
+using RaefTech.Desktop.Core.ViewModels;
+using RaefTech.Shared.Utilities;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Models.RemoteControlDtos;
+using RaefTech.Shared.Win32;
 using System;
 using System.Collections.Concurrent;
 using System.Drawing.Imaging;
@@ -17,7 +17,7 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public class Viewer : IDisposable
     {

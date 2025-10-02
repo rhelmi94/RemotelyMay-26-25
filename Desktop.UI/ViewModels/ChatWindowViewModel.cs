@@ -3,12 +3,12 @@ using System.Collections.ObjectModel;
 using System.Text.Json;
 using System.Windows.Input;
 using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.Reactive;
 using Microsoft.Extensions.DependencyInjection;
-using Remotely.Shared.Models;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Shared.Models;
+using RaefTech.Desktop.Shared.Services;
 
-namespace Remotely.Desktop.UI.ViewModels;
+namespace RaefTech.Desktop.UI.ViewModels;
 
 public interface IChatWindowViewModel : IBrandedViewModelBase
 {

@@ -1,9 +1,9 @@
-using Remotely.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Abstractions;
 using System.ComponentModel;
-using Remotely.Desktop.UI.Controls.Dialogs;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.UI.Controls.Dialogs;
+using RaefTech.Shared.Models;
 
-namespace Remotely.Desktop.UI.Services;
+namespace RaefTech.Desktop.UI.Services;
 
 public class ChatUiService : IChatUiService
 {

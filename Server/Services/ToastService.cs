@@ -1,7 +1,7 @@
-﻿using Remotely.Server.Enums;
-using Remotely.Server.Models;
+﻿using RaefTech.Server.Enums;
+using RaefTech.Server.Models;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IToastService
 {

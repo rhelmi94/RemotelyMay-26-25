@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Remotely.Server.Migrations.PostgreSql;
+namespace RaefTech.Server.Migrations.PostgreSql;
 
 public partial class AddScriptSchedules : Migration
 {
@@ -16,7 +16,7 @@ public partial class AddScriptSchedules : Migration
 
         migrationBuilder.DropColumn(
             name: "DisplayName",
-            table: "RemotelyUsers");
+            table: "RaefTechUsers");
 
         migrationBuilder.DropColumn(
             name: "Token",
@@ -59,9 +59,9 @@ public partial class AddScriptSchedules : Migration
                     principalColumn: "ID",
                     onDelete: ReferentialAction.Restrict);
                 table.ForeignKey(
-                    name: "FK_SavedScripts_RemotelyUsers_CreatorId",
+                    name: "FK_SavedScripts_RaefTechUsers_CreatorId",
                     column: x => x.CreatorId,
-                    principalTable: "RemotelyUsers",
+                    principalTable: "RaefTechUsers",
                     principalColumn: "Id",
                     onDelete: ReferentialAction.Restrict);
             });
@@ -93,9 +93,9 @@ public partial class AddScriptSchedules : Migration
                     principalColumn: "ID",
                     onDelete: ReferentialAction.Restrict);
                 table.ForeignKey(
-                    name: "FK_ScriptSchedules_RemotelyUsers_CreatorId",
+                    name: "FK_ScriptSchedules_RaefTechUsers_CreatorId",
                     column: x => x.CreatorId,
-                    principalTable: "RemotelyUsers",
+                    principalTable: "RaefTechUsers",
                     principalColumn: "Id",
                     onDelete: ReferentialAction.Restrict);
             });
@@ -377,7 +377,7 @@ public partial class AddScriptSchedules : Migration
 
         migrationBuilder.AddColumn<string>(
             name: "DisplayName",
-            table: "RemotelyUsers",
+            table: "RaefTechUsers",
             type: "character varying(100)",
             maxLength: 100,
             nullable: true);

@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Logging;
-using Remotely.Agent.Interfaces;
-using Remotely.Shared.Utilities;
+using RaefTech.Agent.Interfaces;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace Remotely.Agent.Services.MacOS;
+namespace RaefTech.Agent.Services.MacOS;
 
 public class UpdaterMac : IUpdater
 {

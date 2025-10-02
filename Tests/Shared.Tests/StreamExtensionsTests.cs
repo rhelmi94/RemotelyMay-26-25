@@ -1,7 +1,7 @@
 using System.Security.Cryptography;
-using Remotely.Shared.Extensions;
+using RaefTech.Shared.Extensions;
 
-namespace Remotely.Shared.Tests;
+namespace RaefTech.Shared.Tests;
 
 [TestClass]
 public class StreamExtensionsTests

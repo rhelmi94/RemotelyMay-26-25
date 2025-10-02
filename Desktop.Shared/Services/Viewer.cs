@@ -1,15 +1,15 @@
 ﻿using System.Collections.Concurrent;
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Shared.Models;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Helpers;
-using Remotely.Shared.Models.Dtos;
-using Remotely.Desktop.Shared.ViewModels;
+using RaefTech.Shared.Helpers;
+using RaefTech.Shared.Models.Dtos;
+using RaefTech.Desktop.Shared.ViewModels;
 using Microsoft.AspNetCore.SignalR.Client;
-using Remotely.Shared.Services;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Shared.Services;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Desktop.Shared.Services;
+namespace RaefTech.Desktop.Shared.Services;
 
 public interface IViewer : IDisposable
 {

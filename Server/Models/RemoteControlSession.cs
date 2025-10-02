@@ -1,8 +1,8 @@
-using Remotely.Server.Enums;
-using Remotely.Server.Services;
-using Remotely.Shared.Helpers;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Helpers;
 
-namespace Remotely.Server.Models;
+namespace RaefTech.Server.Models;
 
 /// <summary>
 /// Contains data related to a remote control session.  Consuming projects

@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 
-namespace Remotely.Shared.Interfaces;
+namespace RaefTech.Shared.Interfaces;
 public interface IAgentHubClient
 {
     Task ChangeWindowsSession(

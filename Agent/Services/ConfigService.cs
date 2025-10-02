@@ -1,13 +1,13 @@
-﻿using Remotely.Shared;
+﻿using RaefTech.Shared;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Models;
+using RaefTech.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public interface IConfigService
 {

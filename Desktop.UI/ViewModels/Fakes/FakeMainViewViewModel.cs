@@ -1,13 +1,13 @@
-﻿using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Reactive;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Shared.ViewModels;
-using Remotely.Shared.Models;
-using Remotely.Shared.Models.Dtos;
+﻿using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.ViewModels;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Models.Dtos;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 public class FakeMainViewViewModel : FakeBrandedViewModelBase, IMainViewViewModel
 {
 

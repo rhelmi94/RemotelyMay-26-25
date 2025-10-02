@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Remotely.Shared.Services;
+namespace RaefTech.Shared.Services;
 
 public class ElevationDetectorLinux : IElevationDetector
 {

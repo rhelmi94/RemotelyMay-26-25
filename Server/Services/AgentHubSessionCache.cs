@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Entities;
+﻿using RaefTech.Shared.Entities;
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IAgentHubSessionCache
 {

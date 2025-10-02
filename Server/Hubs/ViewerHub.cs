@@ -1,13 +1,13 @@
-using Remotely.Server.Enums;
-using Remotely.Server.Filters;
-using Remotely.Server.Models;
-using Remotely.Server.Services;
-using Remotely.Shared.Interfaces;
-using Remotely.Shared.Models;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Filters;
+using RaefTech.Server.Models;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Interfaces;
+using RaefTech.Shared.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Remotely.Server.Hubs;
+namespace RaefTech.Server.Hubs;
 
 [ServiceFilter(typeof(ViewerAuthorizationFilter))]
 public class ViewerHub : Hub<IViewerHubClient>

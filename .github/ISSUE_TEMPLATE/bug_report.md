@@ -11,8 +11,8 @@ assignees: ""
 Your bug must meet the following requirements, or else it will be closed.  For issues that don't meet these requirements, please reach out to the community in the Discussion areas on GitHub.
 
 Requirements:
-    - ⚠️ Please read the following section in the readme before continuing: https://github.com/immense/Remotely?tab=readme-ov-file#important-https-and-reverse-proxies⚠️
-    - You are running Remotely in Docker using our official image
+    - ⚠️ Please read the following section in the readme before continuing: https://github.com/immense/Raef Tech?tab=readme-ov-file#important-https-and-reverse-proxies⚠️
+    - You are running Raef Tech in Docker using our official image
     - The bug must be related specifically to application code (e.g. not related to hosting, reverse proxy configuration, etc.).
     - It must be immediately reproducible, either in a debug environment or on https://app.remotely.one.  (This doesn't apply to bugs that are clearly code-related.)
 
@@ -30,7 +30,7 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Remotely Version**
+**Raef Tech Version**
 Server (can be found on about page):
 Agent (can be found in device card):
 

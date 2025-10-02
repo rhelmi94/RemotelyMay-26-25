@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models.Messages;
-using Remotely.Server.Services.Stores;
-using Remotely.Shared.Enums;
-using Remotely.Shared.ViewModels;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Server.Services.Stores;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.ViewModels;
 
-namespace Remotely.Server.Components.Devices;
+namespace RaefTech.Server.Components.Devices;
 
 public partial class ChatFrame : AuthComponentBase
 {

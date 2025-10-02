@@ -1,6 +1,6 @@
-﻿using Remotely.Desktop.Core.Interfaces;
-using Remotely.Shared.Utilities;
-using Remotely.Shared.Models;
+﻿using RaefTech.Desktop.Core.Interfaces;
+using RaefTech.Shared.Utilities;
+using RaefTech.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,7 +14,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public interface IDeviceInitService
     {

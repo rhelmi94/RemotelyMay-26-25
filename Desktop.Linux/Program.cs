@@ -1,18 +1,18 @@
-﻿using Remotely.Desktop.Shared.Abstractions;
+﻿using RaefTech.Desktop.Shared.Abstractions;
 using System.Threading;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Services;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Shared.Services;
+using RaefTech.Desktop.Shared.Services;
 using System.Diagnostics;
-using Remotely.Shared.Utilities;
-using Remotely.Desktop.Shared.Startup;
-using Remotely.Desktop.Linux.Startup;
-using Remotely.Desktop.UI.Services;
+using RaefTech.Shared.Utilities;
+using RaefTech.Desktop.Shared.Startup;
+using RaefTech.Desktop.Linux.Startup;
+using RaefTech.Desktop.UI.Services;
 using Avalonia;
-using Remotely.Desktop.UI;
+using RaefTech.Desktop.UI;
 
-namespace Remotely.Desktop.Linux;
+namespace RaefTech.Desktop.Linux;
 
 public class Program
 {

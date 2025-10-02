@@ -1,8 +1,8 @@
-﻿using Remotely.Server.Data;
-using Remotely.Server.Models;
+﻿using RaefTech.Server.Data;
+using RaefTech.Server.Models;
 using System.Text.Json;
 
-namespace Remotely.Server.Extensions;
+namespace RaefTech.Server.Extensions;
 
 public static class AppDbExtensions
 {

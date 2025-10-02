@@ -1,20 +1,20 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.EntityFrameworkCore;
-using Remotely.Server.Enums;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models.Messages;
-using Remotely.Server.Services;
-using Remotely.Server.Services.Stores;
-using Remotely.Shared.Attributes;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Server.Services;
+using RaefTech.Server.Services.Stores;
+using RaefTech.Shared.Attributes;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Utilities;
 using System.Collections;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace Remotely.Server.Components.Devices;
+namespace RaefTech.Server.Components.Devices;
 
 [Authorize]
 public partial class DevicesFrame : AuthComponentBase

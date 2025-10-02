@@ -3,7 +3,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ApplicationIcon>Assets\favicon.ico</ApplicationIcon>
-    <AssemblyName>Remotely_Desktop</AssemblyName>
+    <AssemblyName>RaefTech_Desktop</AssemblyName>
     <Platforms>AnyCPU;x64;x86</Platforms>
   </PropertyGroup>
   <PropertyGroup>
@@ -45,13 +45,13 @@
     <None Remove="Models\**" />
   </ItemGroup>
   <ItemGroup>
-    <AvaloniaResource Remove="Assets\Remotely_Icon.png" />
+    <AvaloniaResource Remove="Assets\RaefTech_Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Assets\Remotely_Icon.png" />
+    <None Remove="Assets\RaefTech_Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\Remotely_Icon.png" />
+    <EmbeddedResource Include="Assets\RaefTech_Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Desktop.Shared\Desktop.Shared.csproj" />

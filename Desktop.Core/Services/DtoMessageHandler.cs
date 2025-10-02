@@ -1,14 +1,14 @@
 ﻿using MessagePack;
-using Remotely.Desktop.Core.Enums;
-using Remotely.Desktop.Core.Interfaces;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Models.RemoteControlDtos;
-using Remotely.Shared.Utilities;
+using RaefTech.Desktop.Core.Enums;
+using RaefTech.Desktop.Core.Interfaces;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Models.RemoteControlDtos;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public interface IDtoMessageHandler
     {

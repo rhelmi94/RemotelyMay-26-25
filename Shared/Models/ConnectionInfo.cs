@@ -1,5 +1,5 @@
 ﻿#nullable enable
-namespace Remotely.Shared.Models;
+namespace RaefTech.Shared.Models;
 
 public class ConnectionInfo
 {

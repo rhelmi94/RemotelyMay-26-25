@@ -1,10 +1,10 @@
-﻿using Remotely.Server.Enums;
-using Remotely.Server.Hubs;
-using Remotely.Shared.Helpers;
-using Remotely.Shared.Interfaces;
+﻿using RaefTech.Server.Enums;
+using RaefTech.Server.Hubs;
+using RaefTech.Shared.Helpers;
+using RaefTech.Shared.Interfaces;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 internal class RemoteControlSessionReconnector : BackgroundService
 {

@@ -1,10 +1,10 @@
-﻿using Remotely.Shared.Extensions;
+﻿using RaefTech.Shared.Extensions;
 using System.Collections.ObjectModel;
 using System.Diagnostics.CodeAnalysis;
 using System.IO.Compression;
 using System.Text;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface ILogsManager
 {

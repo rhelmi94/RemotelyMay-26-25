@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 
-namespace Remotely.Desktop.Shared.Messages;
+namespace RaefTech.Desktop.Shared.Messages;
 
 public class WindowsSessionSwitchedMessage
 {

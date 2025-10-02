@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace Remotely.Shared.Entities;
+namespace RaefTech.Shared.Entities;
 
 public class ScriptRun
 {

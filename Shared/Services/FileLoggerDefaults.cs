@@ -1,7 +1,7 @@
-﻿using Remotely.Shared.Primitives;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Shared.Primitives;
+using RaefTech.Shared.Utilities;
 
-namespace Remotely.Shared.Services;
+namespace RaefTech.Shared.Services;
 public static class FileLoggerDefaults
 {
     private static readonly SemaphoreSlim _logLock = new(1, 1);
@@ -14,7 +14,7 @@ public static class FileLoggerDefaults
             {
                 var logsPath = Path.Combine(
                     Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
-                    "Remotely",
+                    "Raef Tech",
                     "Logs");
 
                 if (EnvironmentHelper.IsDebug)

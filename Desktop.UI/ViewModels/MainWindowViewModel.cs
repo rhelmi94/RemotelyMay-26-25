@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Services;
 
-namespace Remotely.Desktop.UI.ViewModels;
+namespace RaefTech.Desktop.UI.ViewModels;
 
 public interface IMainWindowViewModel : IBrandedViewModelBase
 {

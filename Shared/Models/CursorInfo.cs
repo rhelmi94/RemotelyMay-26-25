@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Remotely.Shared.Models;
+namespace RaefTech.Shared.Models;
 
 public class CursorInfo
 {

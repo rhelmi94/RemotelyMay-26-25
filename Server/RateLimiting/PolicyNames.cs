@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.RateLimiting;
+﻿namespace RaefTech.Server.RateLimiting;
 
 public static class PolicyNames
 {

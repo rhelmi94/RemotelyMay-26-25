@@ -1,8 +1,8 @@
-﻿using Remotely.Desktop.Shared;
-using Remotely.Desktop.Shared.Abstractions;
+﻿using RaefTech.Desktop.Shared;
+using RaefTech.Desktop.Shared.Abstractions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Remotely.Desktop.UI.Services;
+namespace RaefTech.Desktop.UI.Services;
 
 public class SessionIndicator : ISessionIndicator
 {

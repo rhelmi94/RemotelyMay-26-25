@@ -1,7 +1,7 @@
-using Remotely.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Abstractions;
 using Microsoft.Extensions.Logging;
 
-namespace Remotely.Desktop.UI.Services;
+namespace RaefTech.Desktop.UI.Services;
 
 public class ClipboardService : IClipboardService
 {

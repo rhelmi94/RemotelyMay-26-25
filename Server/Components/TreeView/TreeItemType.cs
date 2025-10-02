@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.Components.TreeView;
+﻿namespace RaefTech.Server.Components.TreeView;
 
 public enum TreeItemType
 {

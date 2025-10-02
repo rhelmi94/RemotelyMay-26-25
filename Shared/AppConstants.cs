@@ -1,8 +1,8 @@
-﻿namespace Remotely.Shared;
+﻿namespace RaefTech.Shared;
 
 public class AppConstants
 {
-    public const string DefaultProductName = "Remotely";
+    public const string DefaultProductName = "Raef Tech";
     public const string DefaultPublisherName = "Immense Networks";
     public const string DebugOrgId = "e8f4ad87-4a4b-4da1-bcb2-1788eaeb80e8";
     public const int EmbeddedDataBlockLength = 256;

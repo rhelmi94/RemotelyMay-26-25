@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 
-namespace Remotely.Server.Models;
+namespace RaefTech.Server.Models;
 
 public class SettingsModel
 {

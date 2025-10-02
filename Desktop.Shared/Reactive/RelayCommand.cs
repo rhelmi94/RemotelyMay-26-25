@@ -1,6 +1,6 @@
 ﻿using System.Windows.Input;
 
-namespace Remotely.Desktop.Shared.Reactive;
+namespace RaefTech.Desktop.Shared.Reactive;
 
 public class RelayCommand : ICommand
 {

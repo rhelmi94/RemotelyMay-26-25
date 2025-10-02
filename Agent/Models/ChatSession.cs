@@ -1,6 +1,6 @@
 ﻿using System.IO.Pipes;
 
-namespace Remotely.Agent.Models;
+namespace RaefTech.Agent.Models;
 
 public class ChatSession
 {

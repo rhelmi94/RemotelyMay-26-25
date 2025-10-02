@@ -1,20 +1,20 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Web;
-using Remotely.Server.Enums;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models.Messages;
-using Remotely.Server.Services;
-using Remotely.Server.Services.Stores;
-using Remotely.Shared;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Utilities;
-using Remotely.Shared.ViewModels;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Server.Services;
+using RaefTech.Server.Services.Stores;
+using RaefTech.Shared;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Utilities;
+using RaefTech.Shared.ViewModels;
 using System.Collections.Concurrent;
 using System.Text.Json;
 
-namespace Remotely.Server.Components.Devices;
+namespace RaefTech.Server.Components.Devices;
 
 public partial class DeviceCard : AuthComponentBase
 {

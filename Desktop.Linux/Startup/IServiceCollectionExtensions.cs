@@ -1,11 +1,11 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Startup;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Startup;
 using Microsoft.Extensions.DependencyInjection;
-using Remotely.Desktop.Linux.Services;
-using Remotely.Desktop.UI.Services;
-using Remotely.Desktop.UI.Startup;
+using RaefTech.Desktop.Linux.Services;
+using RaefTech.Desktop.UI.Services;
+using RaefTech.Desktop.UI.Startup;
 
-namespace Remotely.Desktop.Linux.Startup;
+namespace RaefTech.Desktop.Linux.Startup;
 
 public static class IServiceCollectionExtensions
 {

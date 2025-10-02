@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Server.Components.Account;
+namespace RaefTech.Server.Components.Account;
 
 internal sealed class IdentityRedirectManager(NavigationManager navigationManager)
 {

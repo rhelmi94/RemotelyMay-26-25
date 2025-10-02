@@ -1,7 +1,7 @@
-﻿using Remotely.Server.Components.TreeView;
-using Remotely.Shared.Entities;
+﻿using RaefTech.Server.Components.TreeView;
+using RaefTech.Shared.Entities;
 
-namespace Remotely.Server.Components.Scripts;
+namespace RaefTech.Server.Components.Scripts;
 
 public class ScriptTreeNode
 {

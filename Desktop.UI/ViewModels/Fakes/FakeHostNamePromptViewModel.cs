@@ -1,7 +1,7 @@
-﻿using Remotely.Desktop.Shared.Reactive;
+﻿using RaefTech.Desktop.Shared.Reactive;
 using System.Windows.Input;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 
 public class FakeHostNamePromptViewModel : FakeBrandedViewModelBase, IHostNamePromptViewModel
 {

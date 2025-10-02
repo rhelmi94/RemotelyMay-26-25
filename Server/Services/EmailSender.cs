@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using MimeKit;
 using MimeKit.Text;
-using Remotely.Shared.Entities;
+using RaefTech.Shared.Entities;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IEmailSenderEx
 {
@@ -29,7 +29,7 @@ public class EmailSender : IEmailSender
     }
 }
 
-public class EmailSenderEx : IEmailSenderEx, IEmailSender<RemotelyUser>
+public class EmailSenderEx : IEmailSenderEx, IEmailSender<RaefTechUser>
 {
     private readonly IDataService _dataService;
     private readonly ILogger<EmailSenderEx> _logger;
@@ -42,7 +42,7 @@ public class EmailSenderEx : IEmailSenderEx, IEmailSender<RemotelyUser>
         _logger = logger;
     }
 
-    public async Task SendConfirmationLinkAsync(RemotelyUser user, string email, string confirmationLink)
+    public async Task SendConfirmationLinkAsync(RaefTechUser user, string email, string confirmationLink)
     {
         await SendEmailAsync(
             email,
@@ -110,7 +110,7 @@ public class EmailSenderEx : IEmailSenderEx, IEmailSender<RemotelyUser>
         return await SendEmailAsync(email, settings.SmtpEmail, subject, htmlMessage, organizationID);
     }
 
-    public async Task SendPasswordResetCodeAsync(RemotelyUser user, string email, string resetCode)
+    public async Task SendPasswordResetCodeAsync(RaefTechUser user, string email, string resetCode)
     {
         await SendEmailAsync(
             email,
@@ -119,7 +119,7 @@ public class EmailSenderEx : IEmailSenderEx, IEmailSender<RemotelyUser>
             user.OrganizationID);
     }
 
-    public async Task SendPasswordResetLinkAsync(RemotelyUser user, string email, string resetLink)
+    public async Task SendPasswordResetLinkAsync(RaefTechUser user, string email, string resetLink)
     {
         await SendEmailAsync(
             email,

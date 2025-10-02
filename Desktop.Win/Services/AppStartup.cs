@@ -1,11 +1,11 @@
-using Remotely.Desktop.Native.Windows;
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.UI.Services;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Native.Windows;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.UI.Services;
+using RaefTech.Shared.Models;
 
-namespace Remotely.Desktop.Win.Services;
+namespace RaefTech.Desktop.Win.Services;
 
 internal class AppStartup : IAppStartup
 {

@@ -1,18 +1,18 @@
-﻿using Remotely.Shared.Extensions;
+﻿using RaefTech.Shared.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
-using Remotely.Server.Auth;
-using Remotely.Server.Extensions;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
-using Remotely.Shared.ViewModels;
+using RaefTech.Server.Auth;
+using RaefTech.Server.Extensions;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.ViewModels;
 using System.Text;
 using System.Text.Encodings.Web;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -21,10 +21,10 @@ public class OrganizationManagementController : ControllerBase
     private readonly IDataService _dataService;
     private readonly IEmailSenderEx _emailSender;
     private readonly ILogger<OrganizationManagementController> _logger;
-    private readonly UserManager<RemotelyUser> _userManager;
+    private readonly UserManager<RaefTechUser> _userManager;
 
     public OrganizationManagementController(
-        UserManager<RemotelyUser> userManager,
+        UserManager<RaefTechUser> userManager,
         IDataService dataService,
         IEmailSenderEx emailSender,
         ILogger<OrganizationManagementController> logger)
@@ -316,7 +316,7 @@ public class OrganizationManagementController : ControllerBase
 
             var inviteURL = $"{Request.Scheme}://{Request.Host}/Invite/{newInvite.Value.ID}";
             var emailResult = await _emailSender.SendEmailAsync(invite.InvitedUser, "Invitation to Organization in Remotely",
-                        $@"<img src='{Request.Scheme}://{Request.Host}/images/Remotely_Logo.png'/>
+                        $@"<img src='{Request.Scheme}://{Request.Host}/images/RaefTech_Logo.png'/>
                             <br><br>
                             Hello!
                             <br><br>

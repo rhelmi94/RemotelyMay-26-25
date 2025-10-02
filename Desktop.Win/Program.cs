@@ -1,17 +1,17 @@
 ﻿using Avalonia;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Shared.Startup;
-using Remotely.Desktop.UI;
-using Remotely.Desktop.UI.Services;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Startup;
+using RaefTech.Desktop.UI;
+using RaefTech.Desktop.UI.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Remotely.Desktop.Win.Startup;
-using Remotely.Shared.Services;
-using Remotely.Shared.Utilities;
+using RaefTech.Desktop.Win.Startup;
+using RaefTech.Shared.Services;
+using RaefTech.Shared.Utilities;
 using System.Diagnostics;
 using System.Runtime.Versioning;
-using Remotely.Desktop.UI.Startup;
+using RaefTech.Desktop.UI.Startup;
 
-namespace Remotely.Desktop.Win;
+namespace RaefTech.Desktop.Win;
 
 public class Program
 {

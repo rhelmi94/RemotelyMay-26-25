@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.ViewModels;
+﻿namespace RaefTech.Shared.ViewModels;
 
 public class TerminalLineItem
 {

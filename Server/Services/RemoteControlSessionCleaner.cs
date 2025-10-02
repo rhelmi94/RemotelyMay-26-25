@@ -1,4 +1,4 @@
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public class RemoteControlSessionCleaner : BackgroundService
 {

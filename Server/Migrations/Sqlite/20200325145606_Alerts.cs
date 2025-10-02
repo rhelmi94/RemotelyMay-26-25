@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Remotely.Server.Migrations.Sqlite;
+namespace RaefTech.Server.Migrations.Sqlite;
 
 public partial class Alerts : Migration
 {
@@ -33,9 +33,9 @@ public partial class Alerts : Migration
                     principalColumn: "ID",
                     onDelete: ReferentialAction.Restrict);
                 table.ForeignKey(
-                    name: "FK_Alerts_RemotelyUsers_UserID",
+                    name: "FK_Alerts_RaefTechUsers_UserID",
                     column: x => x.UserID,
-                    principalTable: "RemotelyUsers",
+                    principalTable: "RaefTechUsers",
                     principalColumn: "Id",
                     onDelete: ReferentialAction.Restrict);
             });

@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Models;
+﻿using RaefTech.Shared.Models;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
 
-namespace Remotely.Shared.Dtos;
+namespace RaefTech.Shared.Dtos;
 
 [DataContract]
 public class DeviceClientDto

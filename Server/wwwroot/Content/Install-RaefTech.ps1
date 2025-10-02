@@ -1,11 +1,11 @@
 ﻿<#
 .SYNOPSIS
-   Installs the Remotely Client.
+   Installs the Raef Tech Client.
 .DESCRIPTION
    Do not modify this script.  It was generated specifically for your account.
 .EXAMPLE
-   powershell.exe -f Install-Remotely.ps1
-   powershell.exe -f Install-Remotely.ps1 -DeviceAlias "My Super Computer" -DeviceGroup "My Stuff"
+   powershell.exe -f Install-Raef Tech.ps1
+   powershell.exe -f Install-Raef Tech.ps1 -DeviceAlias "My Super Computer" -DeviceGroup "My Stuff"
 #>
 
 param (
@@ -30,7 +30,7 @@ param (
 #endregion
 
 #region Set Variables
-$LogPath = "$env:TEMP\Remotely_Install.txt"
+$LogPath = "$env:TEMP\Raef Tech_Install.txt"
 
 [string]$HostName = $null
 if ($ServerUrl) {
@@ -51,7 +51,7 @@ else {
 	$Platform = "x86"
 }
 
-$InstallPath = "$env:ProgramFiles\Remotely"
+$InstallPath = "$env:ProgramFiles\Raef Tech"
 #endregion
 
 #region Functions
@@ -110,20 +110,20 @@ function Run-StartupChecks {
 	}
 }
 
-function Stop-Remotely {
-	Start-Process -FilePath "cmd.exe" -ArgumentList "/c sc delete Remotely_Service" -Wait -WindowStyle Hidden
-	Stop-Process -Name Remotely_Agent -Force -ErrorAction SilentlyContinue
-	Stop-Process -Name Remotely_Desktop -Force -ErrorAction SilentlyContinue
+function Stop-Raef Tech {
+	Start-Process -FilePath "cmd.exe" -ArgumentList "/c sc delete Raef Tech_Service" -Wait -WindowStyle Hidden
+	Stop-Process -Name Raef Tech_Agent -Force -ErrorAction SilentlyContinue
+	Stop-Process -Name Raef Tech_Desktop -Force -ErrorAction SilentlyContinue
 }
 
-function Uninstall-Remotely {
-	Stop-Remotely
+function Uninstall-Raef Tech {
+	Stop-Raef Tech
 	Remove-Item -Path $InstallPath -Force -Recurse -ErrorAction SilentlyContinue
-	Remove-NetFirewallRule -Name "Remotely Desktop Unattended" -ErrorAction SilentlyContinue
+	Remove-NetFirewallRule -Name "Raef Tech Desktop Unattended" -ErrorAction SilentlyContinue
 }
 
-function Install-Remotely {
-	$HeadResponse = Invoke-WebRequest -Uri "$HostName/Content/Remotely-Win-$Platform.zip" -Method Head -UseBasicParsing
+function Install-Raef Tech {
+	$HeadResponse = Invoke-WebRequest -Uri "$HostName/Content/Raef Tech-Win-$Platform.zip" -Method Head -UseBasicParsing
 	$ETag = $HeadResponse.Headers["ETag"]
 	if (!$Etag) {
 		Write-Log "Failed to get ETag from server.  Aborting install."
@@ -157,25 +157,25 @@ function Install-Remotely {
 
 	if ($Path) {
 		Write-Log "Copying install files..."
-		Copy-Item -Path $Path -Destination "$env:TEMP\Remotely-Win-$Platform.zip"
+		Copy-Item -Path $Path -Destination "$env:TEMP\Raef Tech-Win-$Platform.zip"
 
 	}
 	else {
 		$ProgressPreference = 'SilentlyContinue'
 		Write-Log "Downloading client..."
-		Invoke-WebRequest -Uri "$HostName/Content/Remotely-Win-$Platform.zip" -OutFile "$env:TEMP\Remotely-Win-$Platform.zip" -UseBasicParsing
+		Invoke-WebRequest -Uri "$HostName/Content/Raef Tech-Win-$Platform.zip" -OutFile "$env:TEMP\Raef Tech-Win-$Platform.zip" -UseBasicParsing
 		$ProgressPreference = 'Continue'
 	}
 
-	if (!(Test-Path -Path "$env:TEMP\Remotely-Win-$Platform.zip")) {
+	if (!(Test-Path -Path "$env:TEMP\Raef Tech-Win-$Platform.zip")) {
 		Write-Log "Client files failed to download."
 		Do-Exit
 	}
 
-	Stop-Remotely
+	Stop-Raef Tech
 	Get-ChildItem -Path $InstallPath | Where-Object { $_.Name -notlike "ConnectionInfo.json" } | Remove-Item -Recurse -Force
 
-	Expand-Archive -Path "$env:TEMP\Remotely-Win-$Platform.zip" -DestinationPath "$InstallPath" -Force
+	Expand-Archive -Path "$env:TEMP\Raef Tech-Win-$Platform.zip" -DestinationPath "$InstallPath" -Force
 
 	New-Item -ItemType File -Path "$InstallPath\ConnectionInfo.json" -Value (ConvertTo-Json -InputObject $ConnectionInfo) -Force
 
@@ -193,9 +193,9 @@ function Install-Remotely {
 		Invoke-RestMethod -Method Post -ContentType "application/json" -Uri "$HostName/api/devices" -Body $Body
 	}
 
-	New-Service -Name "Remotely_Service" -BinaryPathName "`"$InstallPath\Remotely_Agent.exe`"" -DisplayName "Remotely Service" -StartupType Automatic -Description "Background service that maintains a connection to the Remotely server.  The service is used for remote support and maintenance by this computer's administrators."
-	Start-Process -FilePath "cmd.exe" -ArgumentList "/c sc.exe failure `"Remotely_Service`" reset=5 actions=restart/5000" -Wait -WindowStyle Hidden
-	Start-Service -Name Remotely_Service
+	New-Service -Name "Raef Tech_Service" -BinaryPathName "`"$InstallPath\Raef Tech_Agent.exe`"" -DisplayName "Raef Tech Service" -StartupType Automatic -Description "Background service that maintains a connection to the Raef Tech server.  The service is used for remote support and maintenance by this computer's administrators."
+	Start-Process -FilePath "cmd.exe" -ArgumentList "/c sc.exe failure `"Raef Tech_Service`" reset=5 actions=restart/5000" -Wait -WindowStyle Hidden
+	Start-Service -Name Raef Tech_Service
 }
 
 #endregion
@@ -209,13 +209,13 @@ try {
 
 	if ($Uninstall) {
 		Write-Log "Uninstall started."
-		Uninstall-Remotely
+		Uninstall-Raef Tech
 		Write-Log "Uninstall completed."
 		exit
 	}
 	else {
 		Write-Log "Install started."
-		Install-Remotely
+		Install-Raef Tech
 		Write-Log "Install completed."
 		exit
 	}

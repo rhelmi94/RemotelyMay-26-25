@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using Remotely.Server.Data;
+using RaefTech.Server.Data;
 
 #nullable disable
 
-namespace Remotely.Server.Migrations.PostgreSql
+namespace RaefTech.Server.Migrations.PostgreSql
 {
     [DbContext(typeof(PostgreSqlDbContext))]
     partial class PostgreSqlDbContextModelSnapshot : ModelSnapshot
@@ -22,7 +22,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("DeviceGroupRemotelyUser", b =>
+            modelBuilder.Entity("DeviceGroupRaefTechUser", b =>
                 {
                     b.Property<string>("DeviceGroupsID")
                         .HasColumnType("text");
@@ -34,7 +34,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("DeviceGroupRemotelyUser");
+                    b.ToTable("DeviceGroupRaefTechUser");
                 });
 
             modelBuilder.Entity("DeviceGroupScriptSchedule", b =>
@@ -199,7 +199,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex");
 
-                    b.ToTable("RemotelyUsers", (string)null);
+                    b.ToTable("RaefTechUsers", (string)null);
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
 
@@ -801,7 +801,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                     b.ToTable("SharedFiles");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Entities.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Entities.RaefTechUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -825,10 +825,10 @@ namespace Remotely.Server.Migrations.PostgreSql
 
                     b.HasIndex("UserName");
 
-                    b.HasDiscriminator().HasValue("RemotelyUser");
+                    b.HasDiscriminator().HasValue("RaefTechUser");
                 });
 
-            modelBuilder.Entity("DeviceGroupRemotelyUser", b =>
+            modelBuilder.Entity("DeviceGroupRaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Entities.DeviceGroup", null)
                         .WithMany()
@@ -836,7 +836,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Remotely.Shared.Entities.RemotelyUser", null)
+                    b.HasOne("Remotely.Shared.Entities.RaefTechUser", null)
                         .WithMany()
                         .HasForeignKey("UsersId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -953,7 +953,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Remotely.Shared.Entities.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Entities.RaefTechUser", "User")
                         .WithMany("Alerts")
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.ClientCascade)
@@ -1027,7 +1027,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
             modelBuilder.Entity("Remotely.Shared.Entities.SavedScript", b =>
                 {
-                    b.HasOne("Remotely.Shared.Entities.RemotelyUser", "Creator")
+                    b.HasOne("Remotely.Shared.Entities.RaefTechUser", "Creator")
                         .WithMany("SavedScripts")
                         .HasForeignKey("CreatorId")
                         .OnDelete(DeleteBehavior.ClientCascade)
@@ -1106,7 +1106,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
             modelBuilder.Entity("Remotely.Shared.Entities.ScriptSchedule", b =>
                 {
-                    b.HasOne("Remotely.Shared.Entities.RemotelyUser", "Creator")
+                    b.HasOne("Remotely.Shared.Entities.RaefTechUser", "Creator")
                         .WithMany("ScriptSchedules")
                         .HasForeignKey("CreatorId")
                         .OnDelete(DeleteBehavior.ClientCascade)
@@ -1132,10 +1132,10 @@ namespace Remotely.Server.Migrations.PostgreSql
                     b.Navigation("Organization");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Entities.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Entities.RaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Entities.Organization", "Organization")
-                        .WithMany("RemotelyUsers")
+                        .WithMany("RaefTechUsers")
                         .HasForeignKey("OrganizationID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1169,7 +1169,7 @@ namespace Remotely.Server.Migrations.PostgreSql
 
                     b.Navigation("InviteLinks");
 
-                    b.Navigation("RemotelyUsers");
+                    b.Navigation("RaefTechUsers");
 
                     b.Navigation("SavedScripts");
 
@@ -1199,7 +1199,7 @@ namespace Remotely.Server.Migrations.PostgreSql
                     b.Navigation("ScriptRuns");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Entities.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Entities.RaefTechUser", b =>
                 {
                     b.Navigation("Alerts");
 

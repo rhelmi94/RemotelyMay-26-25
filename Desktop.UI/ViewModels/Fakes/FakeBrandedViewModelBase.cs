@@ -1,9 +1,9 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Media.Imaging;
-using Remotely.Shared.Entities;
+using RaefTech.Shared.Entities;
 using System.Diagnostics;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 
 public class FakeBrandedViewModelBase : IBrandedViewModelBase
 {

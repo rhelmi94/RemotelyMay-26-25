@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.SignalR;
-using Remotely.Server.Hubs;
-using Remotely.Server.RateLimiting;
-using Remotely.Server.Services;
-using Remotely.Shared.Interfaces;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.RateLimiting;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Interfaces;
 using System.Net;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]

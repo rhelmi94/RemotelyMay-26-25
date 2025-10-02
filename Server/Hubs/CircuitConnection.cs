@@ -1,25 +1,25 @@
-﻿using Remotely.Server.Services;
-using Remotely.Shared.Helpers;
+﻿using RaefTech.Server.Services;
+using RaefTech.Shared.Helpers;
 using Bitbound.SimpleMessenger;
 using Microsoft.AspNetCore.Components.Server.Circuits;
 using Microsoft.AspNetCore.SignalR;
-using Remotely.Server.Models;
-using Remotely.Server.Models.Messages;
-using Remotely.Server.Services.Stores;
-using Remotely.Shared;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Interfaces;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Models;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Server.Services.Stores;
+using RaefTech.Shared;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Interfaces;
+using RaefTech.Shared.Utilities;
 using System.Collections.Concurrent;
 
-namespace Remotely.Server.Hubs;
+namespace RaefTech.Server.Hubs;
 
 public interface ICircuitConnection
 {
     string ConnectionId { get; }
 
-    RemotelyUser User { get; }
+    RaefTechUser User { get; }
 
     Task DeleteRemoteLogs(string deviceId);
 
@@ -73,7 +73,7 @@ public class CircuitConnection : CircuitHandler, ICircuitConnection
     private readonly IAgentHubSessionCache _agentSessionCache;
     private readonly IMessenger _messenger;
     private readonly IToastService _toastService;
-    private RemotelyUser? _user;
+    private RaefTechUser? _user;
 
     public CircuitConnection(
         IAuthService authService,
@@ -104,7 +104,7 @@ public class CircuitConnection : CircuitHandler, ICircuitConnection
 
     public string ConnectionId { get; } = Guid.NewGuid().ToString();
 
-    public RemotelyUser User
+    public RaefTechUser User
     {
         get => _user ?? throw new InvalidOperationException("User is not set.");
         internal set => _user = value;

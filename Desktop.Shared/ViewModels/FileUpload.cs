@@ -1,6 +1,6 @@
-﻿using Remotely.Desktop.Shared.Reactive;
+﻿using RaefTech.Desktop.Shared.Reactive;
 
-namespace Remotely.Desktop.Shared.ViewModels;
+namespace RaefTech.Desktop.Shared.ViewModels;
 
 public partial class FileUpload : ObservableObject
 {

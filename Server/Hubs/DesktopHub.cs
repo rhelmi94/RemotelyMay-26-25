@@ -1,11 +1,11 @@
-using Remotely.Server.Enums;
-using Remotely.Server.Models;
-using Remotely.Server.Services;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Interfaces;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Models;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Interfaces;
 using Microsoft.AspNetCore.SignalR;
 
-namespace Remotely.Server.Hubs;
+namespace RaefTech.Server.Hubs;
 
 public class DesktopHub : Hub<IDesktopHubClient>
 {

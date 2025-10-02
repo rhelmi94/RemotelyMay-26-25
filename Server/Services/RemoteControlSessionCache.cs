@@ -1,10 +1,10 @@
-using Remotely.Server.Models;
-using Remotely.Shared.Services;
+using RaefTech.Server.Models;
+using RaefTech.Shared.Services;
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.Json;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 /// <summary>
 /// A cache containing all active remote control sessions.

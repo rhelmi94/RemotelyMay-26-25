@@ -1,10 +1,10 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using CommunityToolkit.Diagnostics;
-using Remotely.Desktop.Shared;
+using RaefTech.Desktop.Shared;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Remotely.Desktop.UI.Controls.Dialogs;
+namespace RaefTech.Desktop.UI.Controls.Dialogs;
 
 public partial class MessageBox : Window
 {

@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Interfaces;
+﻿namespace RaefTech.Shared.Interfaces;
 
 public interface IViewerHubClient
 {

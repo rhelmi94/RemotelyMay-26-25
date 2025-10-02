@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Remotely.Server.Auth;
-using Remotely.Server.Services;
+using RaefTech.Server.Auth;
+using RaefTech.Server.Services;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]

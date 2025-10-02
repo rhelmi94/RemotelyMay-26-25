@@ -1,8 +1,8 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Shared.Models;
 using System.Drawing;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 public class CursorIconWatcherLinux : ICursorIconWatcher
 {

@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Microsoft.Extensions.Logging;
 
-namespace Remotely.Shared.Services;
+namespace RaefTech.Shared.Services;
 
 public interface IProcessInvoker
 {

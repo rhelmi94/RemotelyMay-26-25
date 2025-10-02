@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Models;
+﻿using RaefTech.Shared.Models;
 
-namespace Remotely.Desktop.Shared.Abstractions;
+namespace RaefTech.Desktop.Shared.Abstractions;
 
 public interface ICursorIconWatcher
 {

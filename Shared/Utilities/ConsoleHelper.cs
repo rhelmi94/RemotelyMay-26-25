@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace Remotely.Shared.Utilities;
+namespace RaefTech.Shared.Utilities;
 
 public static class ConsoleHelper
 {

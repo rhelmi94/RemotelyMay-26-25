@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Remotely.Server.Data;
+namespace RaefTech.Server.Data;
 
 public class TestingDbContext : AppDb
 {
@@ -11,7 +11,7 @@ public class TestingDbContext : AppDb
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)
     {
-        options.UseInMemoryDatabase("Remotely");
+        options.UseInMemoryDatabase("Raef Tech");
         base.OnConfiguring(options);
     }
 }

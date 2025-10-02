@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Remotely.Server.Services;
-using Remotely.Shared.Models;
-using Remotely.Shared.Services;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Services;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/custom-binaries")]
 [ApiController]

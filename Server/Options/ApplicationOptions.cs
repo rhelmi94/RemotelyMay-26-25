@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.Options;
+﻿namespace RaefTech.Server.Options;
 
 public class ApplicationOptions
 {

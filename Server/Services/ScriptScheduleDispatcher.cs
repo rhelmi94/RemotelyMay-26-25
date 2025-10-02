@@ -1,9 +1,9 @@
-﻿using Remotely.Server.Hubs;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Server.Hubs;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Utilities;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IScriptScheduleDispatcher
 {

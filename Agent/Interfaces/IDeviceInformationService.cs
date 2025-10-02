@@ -1,7 +1,7 @@
-﻿using Remotely.Shared.Dtos;
+﻿using RaefTech.Shared.Dtos;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Interfaces;
+namespace RaefTech.Agent.Interfaces;
 
 public interface IDeviceInformationService
 {

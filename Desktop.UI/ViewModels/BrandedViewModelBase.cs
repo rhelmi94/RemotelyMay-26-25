@@ -1,12 +1,12 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Media.Imaging;
-using Remotely.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.Reactive;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Entities;
+using RaefTech.Shared.Entities;
 using System.Reflection;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Services;
 
-namespace Remotely.Desktop.UI.ViewModels;
+namespace RaefTech.Desktop.UI.ViewModels;
 
 public interface IBrandedViewModelBase
 {

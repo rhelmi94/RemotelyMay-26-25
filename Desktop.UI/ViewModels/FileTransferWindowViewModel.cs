@@ -1,13 +1,13 @@
 ﻿using Avalonia.Threading;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Shared.ViewModels;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.ViewModels;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using Remotely.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Abstractions;
 using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.Reactive;
 
-namespace Remotely.Desktop.UI.ViewModels;
+namespace RaefTech.Desktop.UI.ViewModels;
 
 public interface IFileTransferWindowViewModel : IBrandedViewModelBase
 {

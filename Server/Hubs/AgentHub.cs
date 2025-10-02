@@ -1,17 +1,17 @@
-﻿using Remotely.Server.Services;
+﻿using RaefTech.Server.Services;
 using Bitbound.SimpleMessenger;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Caching.Memory;
-using Remotely.Server.Models.Messages;
-using Remotely.Shared;
-using Remotely.Shared.Dtos;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Interfaces;
-using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Shared;
+using RaefTech.Shared.Dtos;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Interfaces;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 
-namespace Remotely.Server.Hubs;
+namespace RaefTech.Server.Hubs;
 
 public class AgentHub : Hub<IAgentHubClient>
 {

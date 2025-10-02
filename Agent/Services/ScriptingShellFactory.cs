@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
-using Remotely.Shared.Enums;
+using RaefTech.Shared.Enums;
 using System;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public interface IScriptingShellFactory
 {

@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Remotely.Server.Migrations.SqlServer;
+namespace RaefTech.Server.Migrations.SqlServer;
 
 public partial class Brandingfix : Migration
 {

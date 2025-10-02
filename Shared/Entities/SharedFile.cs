@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Remotely.Shared.Entities;
+namespace RaefTech.Shared.Entities;
 
 public class SharedFile
 {

@@ -1,18 +1,18 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models;
-using Remotely.Server.Services;
-using Remotely.Server.Auth;
-using Remotely.Shared.Helpers;
-using Remotely.Server.Extensions;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Interfaces;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models;
+using RaefTech.Server.Services;
+using RaefTech.Server.Auth;
+using RaefTech.Shared.Helpers;
+using RaefTech.Server.Extensions;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Interfaces;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -23,11 +23,11 @@ public class RemoteControlController : ControllerBase
     private readonly IAgentHubSessionCache _serviceSessionCache;
     private readonly IDataService _dataService;
     private readonly IOtpProvider _otpProvider;
-    private readonly SignInManager<RemotelyUser> _signInManager;
+    private readonly SignInManager<RaefTechUser> _signInManager;
     private readonly ILogger<RemoteControlController> _logger;
 
     public RemoteControlController(
-        SignInManager<RemotelyUser> signInManager,
+        SignInManager<RaefTechUser> signInManager,
         IDataService dataService,
         IRemoteControlSessionCache remoteControlSessionCache,
         IHubContext<AgentHub, IAgentHubClient> agentHub,

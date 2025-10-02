@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Remotely.Server.Auth;
+using RaefTech.Server.Auth;
 
-namespace Remotely.Server.Extensions;
+namespace RaefTech.Server.Extensions;
 
 public static class IHeaderDictionaryExtensions
 {

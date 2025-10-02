@@ -1,6 +1,6 @@
 ﻿using SkiaSharp;
 
-namespace Remotely.Desktop.Shared.Extensions;
+namespace RaefTech.Desktop.Shared.Extensions;
 
 public static class SKBitmapExtensions
 {

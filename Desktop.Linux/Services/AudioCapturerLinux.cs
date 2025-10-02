@@ -1,6 +1,6 @@
-using Remotely.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Abstractions;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 public class AudioCapturerLinux : IAudioCapturer
 {

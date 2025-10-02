@@ -1,12 +1,12 @@
-﻿using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Shared.Helpers;
-using Remotely.Shared.Models.Dtos;
+﻿using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Shared.Helpers;
+using RaefTech.Shared.Models.Dtos;
 using MessagePack;
 using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Desktop.Shared.Services;
+namespace RaefTech.Desktop.Shared.Services;
 
 public interface IDtoMessageHandler
 {

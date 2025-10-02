@@ -3,7 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public interface IUpdateDownloader
 {

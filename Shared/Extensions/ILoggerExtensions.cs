@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Primitives;
+﻿using RaefTech.Shared.Primitives;
 using Microsoft.Extensions.Logging;
 using System.Runtime.CompilerServices;
 
-namespace Remotely.Shared.Extensions;
+namespace RaefTech.Shared.Extensions;
 
 public static class ILoggerExtensions
 {

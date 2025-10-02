@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Models;
+﻿using RaefTech.Shared.Models;
 using System.Drawing;
 using System.Numerics;
 using System.Runtime.InteropServices;
 
-namespace Remotely.Desktop.Win.Helpers;
+namespace RaefTech.Desktop.Win.Helpers;
 
 internal static class DisplaysEnumerationHelper
 {

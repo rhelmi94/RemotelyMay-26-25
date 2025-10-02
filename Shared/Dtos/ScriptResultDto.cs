@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.DtoEntityBases;
+﻿using RaefTech.Shared.DtoEntityBases;
 
-namespace Remotely.Shared.Dtos;
+namespace RaefTech.Shared.Dtos;
 
 public class ScriptResultDto : ScriptResultBase
 {

@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Utilities;
+﻿namespace RaefTech.Shared.Utilities;
 
 public static class MathHelper
 {

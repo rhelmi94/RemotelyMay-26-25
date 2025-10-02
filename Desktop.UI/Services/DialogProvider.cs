@@ -1,6 +1,6 @@
-﻿using Remotely.Desktop.UI.Controls.Dialogs;
+﻿using RaefTech.Desktop.UI.Controls.Dialogs;
 
-namespace Remotely.Desktop.UI.Services;
+namespace RaefTech.Desktop.UI.Services;
 
 public interface IDialogProvider
 {

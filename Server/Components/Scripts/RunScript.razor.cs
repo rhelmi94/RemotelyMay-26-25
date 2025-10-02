@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
-using Remotely.Server.Components.Pages;
-using Remotely.Server.Hubs;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Components.Pages;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Utilities;
 
-namespace Remotely.Server.Components.Scripts;
+namespace RaefTech.Server.Components.Scripts;
 
 [Authorize]
 public partial class RunScript : AuthComponentBase

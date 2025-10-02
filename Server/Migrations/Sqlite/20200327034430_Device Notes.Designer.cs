@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Remotely.Server.Data;
+using RaefTech.Server.Data;
 
-namespace Remotely.Server.Migrations.Sqlite
+namespace RaefTech.Server.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteDbContext))]
     [Migration("20200327034430_Device Notes")]
@@ -132,7 +132,7 @@ namespace Remotely.Server.Migrations.Sqlite
                         .IsUnique()
                         .HasName("UserNameIndex");
 
-                    b.ToTable("RemotelyUsers");
+                    b.ToTable("RaefTechUsers");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
@@ -547,7 +547,7 @@ namespace Remotely.Server.Migrations.Sqlite
                     b.ToTable("PermissionLinks");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -567,7 +567,7 @@ namespace Remotely.Server.Migrations.Sqlite
 
                     b.HasIndex("UserName");
 
-                    b.HasDiscriminator().HasValue("RemotelyUser");
+                    b.HasDiscriminator().HasValue("RaefTechUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -631,7 +631,7 @@ namespace Remotely.Server.Migrations.Sqlite
                         .WithMany("Alerts")
                         .HasForeignKey("OrganizationID");
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "User")
                         .WithMany("Alerts")
                         .HasForeignKey("UserID");
                 });
@@ -695,15 +695,15 @@ namespace Remotely.Server.Migrations.Sqlite
                         .WithMany("PermissionLinks")
                         .HasForeignKey("DeviceGroupID");
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "User")
                         .WithMany("PermissionLinks")
                         .HasForeignKey("UserID");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Models.Organization", "Organization")
-                        .WithMany("RemotelyUsers")
+                        .WithMany("RaefTechUsers")
                         .HasForeignKey("OrganizationID");
                 });
 #pragma warning restore 612, 618

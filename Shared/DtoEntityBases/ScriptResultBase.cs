@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Enums;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Shared.Enums;
+using RaefTech.Shared.Utilities;
 using System.Text.Json.Serialization;
 
-namespace Remotely.Shared.DtoEntityBases;
+namespace RaefTech.Shared.DtoEntityBases;
 
 public abstract class ScriptResultBase
 {

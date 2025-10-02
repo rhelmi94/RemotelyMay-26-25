@@ -1,17 +1,17 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Remotely.Server.Hubs;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Remotely.Server.Tests;
+namespace RaefTech.Server.Tests;
 
 [TestClass]
 public class ScriptScheduleDispatcherTests

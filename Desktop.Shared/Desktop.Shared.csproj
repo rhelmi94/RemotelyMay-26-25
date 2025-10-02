@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Assets\Remotely_Icon.png" />
+    <EmbeddedResource Include="Assets\RaefTech_Icon.png" />
   </ItemGroup>
 
   <ItemGroup>

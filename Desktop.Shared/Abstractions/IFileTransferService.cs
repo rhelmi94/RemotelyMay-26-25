@@ -1,7 +1,7 @@
-﻿using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Shared.ViewModels;
+﻿using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.ViewModels;
 
-namespace Remotely.Desktop.Shared.Abstractions;
+namespace RaefTech.Desktop.Shared.Abstractions;
 
 public interface IFileTransferService
 {

@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Remotely.Shared.Models;
+namespace RaefTech.Shared.Models;
 
-public class RemotelyUserOptions
+public class RaefTechUserOptions
 {
     [Display(Name = "Display Name")]
     [StringLength(100)]

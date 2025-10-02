@@ -1,6 +1,6 @@
 ﻿using System.Collections.Concurrent;
 
-namespace Remotely.Shared.ViewModels;
+namespace RaefTech.Shared.ViewModels;
 
 public class ChatSession
 {

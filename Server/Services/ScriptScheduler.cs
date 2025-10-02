@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Utilities;
+﻿using RaefTech.Shared.Utilities;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public class ScriptScheduler : IHostedService, IDisposable
 {

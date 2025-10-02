@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Enums;
+﻿namespace RaefTech.Shared.Enums;
 
 public enum CompletionIntent
 {

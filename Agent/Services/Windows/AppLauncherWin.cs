@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.Logging;
-using Remotely.Agent.Interfaces;
-using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+using RaefTech.Agent.Interfaces;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.Versioning;
 using System.Security.Principal;
 using System.Threading.Tasks;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Agent.Services.Windows;
+namespace RaefTech.Agent.Services.Windows;
 
 [SupportedOSPlatform("windows")]
 public class AppLauncherWin : IAppLauncher

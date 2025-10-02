@@ -2,18 +2,18 @@
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.SignalR;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Interfaces;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Interfaces;
 using System.Net;
 
-namespace Remotely.Server.Components.Pages;
+namespace RaefTech.Server.Components.Pages;
 
 public partial class ServerConfig : AuthComponentBase
 {
-    private readonly List<RemotelyUser> _userList = new();
+    private readonly List<RaefTechUser> _userList = new();
     private string? _alertMessage;
     private string? _bannedDeviceSelected;
     private string? _bannedDeviceToAdd;
@@ -61,7 +61,7 @@ public partial class ServerConfig : AuthComponentBase
     private IEnumerable<string> OutdatedDevices => GetOutdatedDevices();
     private int TotalDevices => DataService.GetTotalDevices();
 
-    private IEnumerable<RemotelyUser> UserList
+    private IEnumerable<RaefTechUser> UserList
     {
         get
         {
@@ -239,7 +239,7 @@ public partial class ServerConfig : AuthComponentBase
         }
     }
 
-    private void SetIsServerAdmin(ChangeEventArgs ev, RemotelyUser user)
+    private void SetIsServerAdmin(ChangeEventArgs ev, RaefTechUser user)
     {
         if (ev.Value is not bool isAdmin)
         {

@@ -1,8 +1,8 @@
-﻿using Remotely.Server.Models;
+﻿using RaefTech.Server.Models;
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IDesktopStreamCache
 {

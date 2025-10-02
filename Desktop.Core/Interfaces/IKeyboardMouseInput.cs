@@ -1,7 +1,7 @@
-﻿using Remotely.Desktop.Core.Enums;
-using Remotely.Desktop.Core.Services;
+﻿using RaefTech.Desktop.Core.Enums;
+using RaefTech.Desktop.Core.Services;
 
-namespace Remotely.Desktop.Core.Interfaces
+namespace RaefTech.Desktop.Core.Interfaces
 {
     public interface IKeyboardMouseInput
     {

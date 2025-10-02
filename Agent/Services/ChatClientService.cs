@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.Logging;
-using Remotely.Agent.Interfaces;
-using Remotely.Agent.Models;
-using Remotely.Shared.Models;
+using RaefTech.Agent.Interfaces;
+using RaefTech.Agent.Models;
+using RaefTech.Shared.Models;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public interface IChatClientService
 {

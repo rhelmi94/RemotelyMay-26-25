@@ -21,12 +21,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Shared.Models;
 using Bitbound.SimpleMessenger;
-using Remotely.Desktop.Win.Helpers;
-using Remotely.Desktop.Win.Models;
+using RaefTech.Desktop.Win.Helpers;
+using RaefTech.Desktop.Win.Models;
 using SharpDX;
 using SharpDX.Direct3D11;
 using SharpDX.DXGI;
@@ -39,11 +39,11 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
 using Result = Remotely.Shared.Primitives.Result;
-using Remotely.Desktop.Shared.Messages;
-using Remotely.Shared.Primitives;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Desktop.Shared.Messages;
+using RaefTech.Shared.Primitives;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Desktop.Win.Services;
+namespace RaefTech.Desktop.Win.Services;
 
 [SupportedOSPlatform("windows")]
 public class ScreenCapturerWin : IScreenCapturer

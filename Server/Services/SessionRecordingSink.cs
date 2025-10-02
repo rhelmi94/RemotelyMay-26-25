@@ -1,6 +1,6 @@
-﻿using Remotely.Server.Models;
+﻿using RaefTech.Server.Models;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 
 /// <summary>

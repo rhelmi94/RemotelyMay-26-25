@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace Remotely.Desktop.UI.Views;
+namespace RaefTech.Desktop.UI.Views;
 
 public partial class HostNamePrompt : Window
 {

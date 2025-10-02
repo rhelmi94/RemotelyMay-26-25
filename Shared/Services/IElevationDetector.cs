@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Services;
+﻿namespace RaefTech.Shared.Services;
 
 public interface IElevationDetector
 {

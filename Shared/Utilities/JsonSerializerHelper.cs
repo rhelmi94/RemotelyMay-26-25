@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace Remotely.Shared.Utilities;
+namespace RaefTech.Shared.Utilities;
 
 public class JsonSerializerHelper
 {

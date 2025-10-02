@@ -1,15 +1,15 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Primitives;
+using RaefTech.Shared.Primitives;
 using System.CommandLine;
 using System.CommandLine.NamingConventionBinder;
 using System.Runtime.Versioning;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Desktop.Shared.Startup;
+namespace RaefTech.Desktop.Shared.Startup;
 
 public static class IServiceProviderExtensions
 {

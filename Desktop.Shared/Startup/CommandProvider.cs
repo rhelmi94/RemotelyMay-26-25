@@ -1,8 +1,8 @@
 using System.CommandLine;
 using CommunityToolkit.Diagnostics;
-using Remotely.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Enums;
 
-namespace Remotely.Desktop.Shared.Startup;
+namespace RaefTech.Desktop.Shared.Startup;
 public static class CommandProvider
 {
     /// <summary>

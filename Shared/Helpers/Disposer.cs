@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Helpers;
+﻿namespace RaefTech.Shared.Helpers;
 
 public static class Disposer
 {

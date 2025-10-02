@@ -3,11 +3,11 @@ using Avalonia.Controls;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Input.Platform;
 using Avalonia.Threading;
-using Remotely.Shared.Helpers;
+using RaefTech.Shared.Helpers;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Primitives;
+using RaefTech.Shared.Primitives;
 
-namespace Remotely.Desktop.UI.Services;
+namespace RaefTech.Desktop.UI.Services;
 
 public interface IUiDispatcher
 {

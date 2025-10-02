@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Remotely.Server.Services;
-using Remotely.Shared;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Services;
+using RaefTech.Shared;
+using RaefTech.Shared.Utilities;
 using System.Net;
 
-namespace Remotely.Server.Auth;
+namespace RaefTech.Server.Auth;
 
 public class ExpiringTokenFilter : ActionFilterAttribute, IAsyncAuthorizationFilter
 {

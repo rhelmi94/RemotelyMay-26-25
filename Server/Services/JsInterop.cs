@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IJsInterop
 {

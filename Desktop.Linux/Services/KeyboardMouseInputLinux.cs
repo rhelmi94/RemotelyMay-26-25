@@ -1,10 +1,10 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Services;
 using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Native.Linux;
+using RaefTech.Desktop.Native.Linux;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 public class KeyboardMouseInputLinux : IKeyboardMouseInput
 {

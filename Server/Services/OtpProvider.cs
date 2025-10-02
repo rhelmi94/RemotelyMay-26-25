@@ -1,7 +1,7 @@
-﻿using Remotely.Shared.Helpers;
+﻿using RaefTech.Shared.Helpers;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IOtpProvider
 {

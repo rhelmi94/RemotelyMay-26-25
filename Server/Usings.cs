@@ -2,5 +2,5 @@
 global using System.Collections.Generic;
 global using System.Linq;
 global using System.Threading.Tasks;
-global using Remotely.Shared.Primitives;
-global using Remotely.Server.Components;
+global using RaefTech.Shared.Primitives;
+global using RaefTech.Server.Components;

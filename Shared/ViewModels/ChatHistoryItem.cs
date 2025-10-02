@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 
-namespace Remotely.Shared.ViewModels;
+namespace RaefTech.Shared.ViewModels;
 
 public class ChatHistoryItem
 {

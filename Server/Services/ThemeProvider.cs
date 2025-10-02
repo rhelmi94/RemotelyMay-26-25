@@ -1,6 +1,6 @@
-﻿using Remotely.Shared.Enums;
+﻿using RaefTech.Shared.Enums;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IThemeProvider
 {

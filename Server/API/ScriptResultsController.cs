@@ -1,13 +1,13 @@
-﻿using Remotely.Shared.Extensions;
+﻿using RaefTech.Shared.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Remotely.Server.Auth;
-using Remotely.Server.Extensions;
-using Remotely.Server.Services;
-using Remotely.Shared.Dtos;
+using RaefTech.Server.Auth;
+using RaefTech.Server.Extensions;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Dtos;
 using System.Text;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]

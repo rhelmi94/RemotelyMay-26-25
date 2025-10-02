@@ -1,10 +1,10 @@
 ﻿#nullable enable
 
 using MessagePack;
-using Remotely.Shared.Models;
-using Remotely.Shared.Primitives;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Primitives;
 
-namespace Remotely.Shared.Services;
+namespace RaefTech.Shared.Services;
 
 public interface IEmbeddedServerDataProvider
 {

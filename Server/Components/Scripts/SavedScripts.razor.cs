@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using Remotely.Server.Components.Pages;
-using Remotely.Server.Enums;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
+using RaefTech.Server.Components.Pages;
+using RaefTech.Server.Enums;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
 
-namespace Remotely.Server.Components.Scripts;
+namespace RaefTech.Server.Components.Scripts;
 
 [Authorize]
 public partial class SavedScripts : AuthComponentBase

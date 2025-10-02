@@ -1,8 +1,8 @@
-﻿using Remotely.Desktop.Shared.Reactive;
+﻿using RaefTech.Desktop.Shared.Reactive;
 using System.Windows.Input;
-using Remotely.Desktop.UI.Controls.Dialogs;
+using RaefTech.Desktop.UI.Controls.Dialogs;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 
 public class FakeMessageBoxViewModel : FakeBrandedViewModelBase, IMessageBoxViewModel
 {

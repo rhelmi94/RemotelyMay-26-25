@@ -1,10 +1,10 @@
-using Remotely.Server.Filters;
-using Remotely.Server.Models;
+using RaefTech.Server.Filters;
+using RaefTech.Server.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Remotely.Server.Services;
+using RaefTech.Server.Services;
 
-namespace Remotely.Server.Pages;
+namespace RaefTech.Server.Pages;
 
 [ServiceFilter(typeof(ViewerAuthorizationFilter))]
 public class ViewerModel(IDataService _dataService) : PageModel
@@ -33,8 +33,8 @@ public class ViewerModel(IDataService _dataService) : PageModel
     private async Task<string> GetLogoUrl()
     {
         return await GetTheme() == ViewerPageTheme.Dark ?
-           "/images/viewer/remotely-logo-dark.svg" :
-           "/images/viewer/remotely-logo-light.svg";
+           "/images/viewer/raeftech-logo-dark.svg" :
+           "/images/viewer/raeftech-logo-light.svg";
     }
 
     private Task<ViewerPageTheme> GetTheme()

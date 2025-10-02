@@ -1,9 +1,9 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.UI.Services;
-using Remotely.Shared.Extensions;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.UI.Services;
+using RaefTech.Shared.Extensions;
 
-namespace Remotely.Desktop.Win.Services;
+namespace RaefTech.Desktop.Win.Services;
 
 public class ShutdownServiceWin : IShutdownService
 {

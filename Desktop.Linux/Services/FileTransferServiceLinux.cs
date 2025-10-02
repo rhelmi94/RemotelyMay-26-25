@@ -1,15 +1,15 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Shared.ViewModels;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.ViewModels;
 using Microsoft.Extensions.Logging;
 using System.Collections.Concurrent;
-using Remotely.Desktop.UI.Controls.Dialogs;
-using Remotely.Desktop.UI.Views;
-using Remotely.Desktop.UI.Services;
+using RaefTech.Desktop.UI.Controls.Dialogs;
+using RaefTech.Desktop.UI.Views;
+using RaefTech.Desktop.UI.Services;
 using System.Threading;
 using System.IO;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 public class FileTransferServiceLinux : IFileTransferService
 {

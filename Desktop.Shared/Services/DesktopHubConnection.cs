@@ -1,17 +1,17 @@
-﻿using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Messages;
-using Remotely.Shared.Enums;
-using Remotely.Shared.Interfaces;
-using Remotely.Shared.Models;
+﻿using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Messages;
+using RaefTech.Shared.Enums;
+using RaefTech.Shared.Interfaces;
+using RaefTech.Shared.Models;
 using Bitbound.SimpleMessenger;
 using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Primitives;
+using RaefTech.Shared.Primitives;
 using System.Diagnostics;
-using Remotely.Desktop.Native.Windows;
+using RaefTech.Desktop.Native.Windows;
 
-namespace Remotely.Desktop.Shared.Services;
+namespace RaefTech.Desktop.Shared.Services;
 
 public interface IDesktopHubConnection
 {

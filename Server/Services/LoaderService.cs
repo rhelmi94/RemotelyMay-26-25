@@ -1,8 +1,8 @@
 ﻿using Bitbound.SimpleMessenger;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models.Messages;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models.Messages;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface ILoaderService
 {

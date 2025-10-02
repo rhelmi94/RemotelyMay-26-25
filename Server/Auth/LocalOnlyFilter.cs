@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Net;
 
-namespace Remotely.Server.Auth;
+namespace RaefTech.Server.Auth;
 
 public class LocalOnlyFilter : IAuthorizationFilter
 {

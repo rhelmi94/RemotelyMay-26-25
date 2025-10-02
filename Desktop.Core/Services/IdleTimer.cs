@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Utilities;
+﻿using RaefTech.Shared.Utilities;
 using System;
 using System.Collections.Concurrent;
 using System.Timers;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public class IdleTimer
     {

@@ -1,4 +1,4 @@
-﻿namespace Remotely.Desktop.Shared;
+﻿namespace RaefTech.Desktop.Shared;
 
 public static class StaticServiceProvider
 {

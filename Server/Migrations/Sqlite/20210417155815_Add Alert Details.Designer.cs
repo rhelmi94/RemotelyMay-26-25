@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Remotely.Server.Data;
+using RaefTech.Server.Data;
 
-namespace Remotely.Server.Migrations.Sqlite
+namespace RaefTech.Server.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteDbContext))]
     [Migration("20210417155815_Add Alert Details")]
@@ -18,7 +18,7 @@ namespace Remotely.Server.Migrations.Sqlite
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.5");
 
-            modelBuilder.Entity("DeviceGroupRemotelyUser", b =>
+            modelBuilder.Entity("DeviceGroupRaefTechUser", b =>
                 {
                     b.Property<string>("DeviceGroupsID")
                         .HasColumnType("TEXT");
@@ -30,7 +30,7 @@ namespace Remotely.Server.Migrations.Sqlite
 
                     b.HasIndex("UsersId");
 
-                    b.ToTable("DeviceGroupRemotelyUser");
+                    b.ToTable("DeviceGroupRaefTechUser");
                 });
 
             modelBuilder.Entity("DeviceGroupScriptSchedule", b =>
@@ -207,7 +207,7 @@ namespace Remotely.Server.Migrations.Sqlite
                         .IsUnique()
                         .HasDatabaseName("UserNameIndex");
 
-                    b.ToTable("RemotelyUsers");
+                    b.ToTable("RaefTechUsers");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
@@ -835,7 +835,7 @@ namespace Remotely.Server.Migrations.Sqlite
                     b.ToTable("SharedFiles");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -858,10 +858,10 @@ namespace Remotely.Server.Migrations.Sqlite
 
                     b.HasIndex("UserName");
 
-                    b.HasDiscriminator().HasValue("RemotelyUser");
+                    b.HasDiscriminator().HasValue("RaefTechUser");
                 });
 
-            modelBuilder.Entity("DeviceGroupRemotelyUser", b =>
+            modelBuilder.Entity("DeviceGroupRaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Models.DeviceGroup", null)
                         .WithMany()
@@ -869,7 +869,7 @@ namespace Remotely.Server.Migrations.Sqlite
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", null)
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", null)
                         .WithMany()
                         .HasForeignKey("UsersId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -997,7 +997,7 @@ namespace Remotely.Server.Migrations.Sqlite
                         .WithMany("Alerts")
                         .HasForeignKey("OrganizationID");
 
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "User")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "User")
                         .WithMany("Alerts")
                         .HasForeignKey("UserID");
 
@@ -1070,7 +1070,7 @@ namespace Remotely.Server.Migrations.Sqlite
 
             modelBuilder.Entity("Remotely.Shared.Models.SavedScript", b =>
                 {
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "Creator")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "Creator")
                         .WithMany("SavedScripts")
                         .HasForeignKey("CreatorId");
 
@@ -1123,7 +1123,7 @@ namespace Remotely.Server.Migrations.Sqlite
 
             modelBuilder.Entity("Remotely.Shared.Models.ScriptSchedule", b =>
                 {
-                    b.HasOne("Remotely.Shared.Models.RemotelyUser", "Creator")
+                    b.HasOne("Remotely.Shared.Models.RaefTechUser", "Creator")
                         .WithMany("ScriptSchedules")
                         .HasForeignKey("CreatorId");
 
@@ -1145,10 +1145,10 @@ namespace Remotely.Server.Migrations.Sqlite
                     b.Navigation("Organization");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.HasOne("Remotely.Shared.Models.Organization", "Organization")
-                        .WithMany("RemotelyUsers")
+                        .WithMany("RaefTechUsers")
                         .HasForeignKey("OrganizationID");
 
                     b.Navigation("Organization");
@@ -1180,7 +1180,7 @@ namespace Remotely.Server.Migrations.Sqlite
 
                     b.Navigation("InviteLinks");
 
-                    b.Navigation("RemotelyUsers");
+                    b.Navigation("RaefTechUsers");
 
                     b.Navigation("SavedScripts");
 
@@ -1203,7 +1203,7 @@ namespace Remotely.Server.Migrations.Sqlite
                     b.Navigation("ScriptRuns");
                 });
 
-            modelBuilder.Entity("Remotely.Shared.Models.RemotelyUser", b =>
+            modelBuilder.Entity("Remotely.Shared.Models.RaefTechUser", b =>
                 {
                     b.Navigation("Alerts");
 

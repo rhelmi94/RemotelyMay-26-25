@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Server.Components;
+namespace RaefTech.Server.Components;
 
 [Authorize]
 public class AuthComponentBase : MessengerSubscriber
@@ -12,7 +12,7 @@ public class AuthComponentBase : MessengerSubscriber
     [Inject]
     protected IAuthService AuthService { get; set; } = null!;
 
-    protected RemotelyUser? User { get; private set; }
+    protected RaefTechUser? User { get; private set; }
 
     protected string? UserName => User?.UserName;
 

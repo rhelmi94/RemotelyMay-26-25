@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-using Remotely.Agent.Interfaces;
-using Remotely.Shared.Utilities;
+using RaefTech.Agent.Interfaces;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -10,7 +10,7 @@ using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Services.Windows;
+namespace RaefTech.Agent.Services.Windows;
 
 public class UpdaterWin : IUpdater
 {
@@ -130,11 +130,11 @@ public class UpdaterWin : IUpdater
 
             var zipPath = Path.Combine(Path.GetTempPath(), "RemotelyUpdate.zip");
 
-            var installerPath = Path.Combine(Path.GetTempPath(), "Install-Remotely.ps1");
+            var installerPath = Path.Combine(Path.GetTempPath(), "Install-RaefTech.ps1");
             var platform = Environment.Is64BitOperatingSystem ? "x64" : "x86";
 
             await _updateDownloader.DownloadFile(
-                 $"{serverUrl}/Content/Install-Remotely.ps1",
+                 $"{serverUrl}/Content/Install-RaefTech.ps1",
                  installerPath);
 
             await _updateDownloader.DownloadFile(

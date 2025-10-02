@@ -1,10 +1,10 @@
 ﻿using Avalonia.Controls;
 using System.Windows.Input;
 using Microsoft.Extensions.Logging;
-using Remotely.Desktop.Shared.Reactive;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.Services;
 
-namespace Remotely.Desktop.UI.ViewModels;
+namespace RaefTech.Desktop.UI.ViewModels;
 
 public interface IHostNamePromptViewModel : IBrandedViewModelBase
 {

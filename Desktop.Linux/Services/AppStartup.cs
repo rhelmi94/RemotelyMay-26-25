@@ -1,11 +1,11 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.UI.Services;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.UI.Services;
+using RaefTech.Shared.Models;
 using Microsoft.Extensions.Logging;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 internal class AppStartup : IAppStartup
 {

@@ -1,8 +1,8 @@
-﻿using Remotely.Server.Hubs;
+﻿using RaefTech.Server.Hubs;
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface ICircuitManager
 {

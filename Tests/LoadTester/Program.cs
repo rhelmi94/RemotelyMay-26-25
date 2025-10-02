@@ -1,14 +1,14 @@
 ﻿using Microsoft.AspNetCore.SignalR.Client;
 using Microsoft.Extensions.Logging;
 using Moq;
-using Remotely.Agent.Services;
-using Remotely.Agent.Services.Windows;
+using RaefTech.Agent.Services;
+using RaefTech.Agent.Services.Windows;
 using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.LoadTester;
+namespace RaefTech.LoadTester;
 
 internal class Program
 {

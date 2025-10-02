@@ -1,11 +1,11 @@
-﻿using Remotely.Desktop.Core.Enums;
-using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+﻿using RaefTech.Desktop.Core.Enums;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 
-namespace Remotely.Desktop.Core
+namespace RaefTech.Desktop.Core
 {
     public class Conductor
     {

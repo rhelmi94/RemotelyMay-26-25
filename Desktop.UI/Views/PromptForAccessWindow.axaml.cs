@@ -1,7 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace Remotely.Desktop.UI.Views;
+namespace RaefTech.Desktop.UI.Views;
 
 public partial class PromptForAccessWindow : Window
 {

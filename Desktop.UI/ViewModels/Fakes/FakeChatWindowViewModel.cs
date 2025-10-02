@@ -1,9 +1,9 @@
-﻿using Remotely.Desktop.Shared.Reactive;
-using Remotely.Shared.Models;
+﻿using RaefTech.Desktop.Shared.Reactive;
+using RaefTech.Shared.Models;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 
 public class FakeChatWindowViewModel : FakeBrandedViewModelBase, IChatWindowViewModel
 {

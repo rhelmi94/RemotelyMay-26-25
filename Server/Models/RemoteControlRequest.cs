@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.Models;
+﻿namespace RaefTech.Server.Models;
 
 public class RemoteControlRequest
 {

@@ -1,7 +1,7 @@
-﻿using Remotely.Shared.Enums;
-using Remotely.Shared.Models;
+﻿using RaefTech.Shared.Enums;
+using RaefTech.Shared.Models;
 
-namespace Remotely.Shared.Interfaces;
+namespace RaefTech.Shared.Interfaces;
 
 public interface IDesktopHubClient
 {

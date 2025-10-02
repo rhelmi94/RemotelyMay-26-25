@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Remotely.Server.Data;
+namespace RaefTech.Server.Data;
 
 public class SqlServerDbContext : AppDb
 {

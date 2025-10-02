@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Services;
+using RaefTech.Shared.Services;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public interface ICpuUtilizationSampler : IHostedService
 {

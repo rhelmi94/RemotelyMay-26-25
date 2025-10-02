@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Remotely.Desktop.Native.Windows;
+namespace RaefTech.Desktop.Native.Windows;
 
 public static class GDI32
 {

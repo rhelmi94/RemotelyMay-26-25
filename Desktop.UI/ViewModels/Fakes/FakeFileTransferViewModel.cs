@@ -1,9 +1,9 @@
-﻿using Remotely.Desktop.Shared.Reactive;
-using Remotely.Desktop.Shared.ViewModels;
+﻿using RaefTech.Desktop.Shared.Reactive;
+using RaefTech.Desktop.Shared.ViewModels;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
-namespace Remotely.Desktop.UI.ViewModels.Fakes;
+namespace RaefTech.Desktop.UI.ViewModels.Fakes;
 
 public class FakeFileTransferViewModel : FakeBrandedViewModelBase, IFileTransferWindowViewModel
 {

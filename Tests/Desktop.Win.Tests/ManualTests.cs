@@ -1,15 +1,15 @@
 ﻿#nullable disable
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Services;
-using Remotely.Desktop.Windows.Services;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Services;
+using RaefTech.Desktop.Windows.Services;
+using RaefTech.Shared.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using Remotely.Desktop.Win.Services;
-using Remotely.Shared.Models;
-using Remotely.Shared.Models.RemoteControlDtos;
+using RaefTech.Desktop.Win.Services;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Models.RemoteControlDtos;
 using SkiaSharp;
 using SkiaSharp.Views.Desktop;
 using System;
@@ -22,7 +22,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Tests
+namespace RaefTech.Tests
 {
     [TestClass]
     [Ignore("Manual test.")]

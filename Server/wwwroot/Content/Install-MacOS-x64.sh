@@ -4,8 +4,8 @@ HostName=
 Organization=
 GUID="$(uuidgen)"
 UpdatePackagePath=""
-InstallDir="/usr/local/bin/Remotely"
-ETag=$(curl --head $HostName/Content/Remotely-MacOS-x64.zip | grep -i "etag" | cut -d' ' -f 2)
+InstallDir="/usr/local/bin/Raef Tech"
+ETag=$(curl --head $HostName/Content/Raef Tech-MacOS-x64.zip | grep -i "etag" | cut -d' ' -f 2)
 LogPath="/var/log/remotely/Agent_Install.log"
 
 mkdir -p /var/log/remotely
@@ -53,25 +53,25 @@ if [ -f "$InstallDir/ConnectionInfo.json" ]; then
     fi
 fi
 
-rm -r -f /Applications/Remotely
+rm -r -f /Applications/Raef Tech
 rm -f /Library/LaunchDaemons/remotely-agent.plist
 
 mkdir -p $InstallDir
 chmod -R 755 $InstallDir
 
 if [ -z "$UpdatePackagePath" ]; then
-    echo  "Downloading client..." >> /tmp/Remotely_Install.log
-    curl $HostName/Content/Remotely-MacOS-x64.zip --output $InstallDir/Remotely-MacOS-x64.zip
+    echo  "Downloading client..." >> /tmp/Raef Tech_Install.log
+    curl $HostName/Content/Raef Tech-MacOS-x64.zip --output $InstallDir/Raef Tech-MacOS-x64.zip
 else
-    echo  "Copying install files..." >> /tmp/Remotely_Install.log
-    cp "$UpdatePackagePath" $InstallDir/Remotely-MacOS-x64.zip
+    echo  "Copying install files..." >> /tmp/Raef Tech_Install.log
+    cp "$UpdatePackagePath" $InstallDir/Raef Tech-MacOS-x64.zip
     rm -f "$UpdatePackagePath"
 fi
 
-unzip -o $InstallDir/Remotely-MacOS-x64.zip -d $InstallDir
-rm -f $InstallDir/Remotely-MacOS-x64.zip
-chmod +x $InstallDir/Remotely_Agent
-chmod +x $InstallDir/Desktop/Remotely_Desktop
+unzip -o $InstallDir/Raef Tech-MacOS-x64.zip -d $InstallDir
+rm -f $InstallDir/Raef Tech-MacOS-x64.zip
+chmod +x $InstallDir/Raef Tech_Agent
+chmod +x $InstallDir/Desktop/Raef Tech_Desktop
 
 connectionInfo="{
     \"DeviceID\":\"$GUID\", 
@@ -82,7 +82,7 @@ connectionInfo="{
 
 echo "$connectionInfo" > $InstallDir/ConnectionInfo.json
 
-curl --head $HostName/Content/Remotely-MacOS-x64.zip | grep -i "etag" | cut -d' ' -f 2 > $InstallDir/etag.txt
+curl --head $HostName/Content/Raef Tech-MacOS-x64.zip | grep -i "etag" | cut -d' ' -f 2 > $InstallDir/etag.txt
 
 
 plistFile="<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -93,7 +93,7 @@ plistFile="<?xml version=\"1.0\" encoding=\"UTF-8\"?>
     <string>com.translucency.remotely-agent</string>
     <key>ProgramArguments</key>
     <array>
-        <string>$InstallDir/Remotely_Agent</string>
+        <string>$InstallDir/Raef Tech_Agent</string>
     </array>
     <key>KeepAlive</key>
     <true/>

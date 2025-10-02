@@ -1,10 +1,10 @@
-﻿using Remotely.Desktop.Core.Services;
-using Remotely.Desktop.Core.ViewModels;
+﻿using RaefTech.Desktop.Core.Services;
+using RaefTech.Desktop.Core.ViewModels;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Remotely.Desktop.Core.Interfaces
+namespace RaefTech.Desktop.Core.Interfaces
 {
     public interface IFileTransferService
     {

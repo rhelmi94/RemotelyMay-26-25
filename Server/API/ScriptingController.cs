@@ -1,18 +1,18 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using Remotely.Server.Hubs;
-using Remotely.Server.Services;
-using Remotely.Shared.Utilities;
-using Remotely.Shared.Enums;
-using Remotely.Server.Auth;
-using Remotely.Shared.Helpers;
-using Remotely.Shared;
-using Remotely.Server.Extensions;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Interfaces;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Utilities;
+using RaefTech.Shared.Enums;
+using RaefTech.Server.Auth;
+using RaefTech.Shared.Helpers;
+using RaefTech.Shared;
+using RaefTech.Server.Extensions;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Interfaces;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -24,9 +24,9 @@ public class ScriptingController : ControllerBase
     private readonly IAgentHubSessionCache _serviceSessionCache;
     private readonly IExpiringTokenService _expiringTokenService;
 
-    private readonly UserManager<RemotelyUser> _userManager;
+    private readonly UserManager<RaefTechUser> _userManager;
 
-    public ScriptingController(UserManager<RemotelyUser> userManager,
+    public ScriptingController(UserManager<RaefTechUser> userManager,
         IDataService dataService,
         IAgentHubSessionCache serviceSessionCache,
         IExpiringTokenService expiringTokenService,

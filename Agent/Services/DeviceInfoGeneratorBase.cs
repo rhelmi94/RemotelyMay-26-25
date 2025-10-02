@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Remotely.Shared.Dtos;
-using Remotely.Shared.Models;
-using Remotely.Shared.Utilities;
+using RaefTech.Shared.Dtos;
+using RaefTech.Shared.Models;
+using RaefTech.Shared.Utilities;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,7 +10,7 @@ using System.Net.NetworkInformation;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
 
-namespace Remotely.Agent.Services;
+namespace RaefTech.Agent.Services;
 
 public abstract class DeviceInfoGeneratorBase
 {

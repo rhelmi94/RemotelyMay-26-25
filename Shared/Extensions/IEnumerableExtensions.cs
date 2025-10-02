@@ -1,4 +1,4 @@
-﻿namespace Remotely.Shared.Extensions;
+﻿namespace RaefTech.Shared.Extensions;
 
 public static class IEnumerableExtensions
 {

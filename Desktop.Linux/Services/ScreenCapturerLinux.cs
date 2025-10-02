@@ -1,13 +1,13 @@
-using Remotely.Desktop.Shared.Abstractions;
-using Remotely.Desktop.Shared.Services;
+using RaefTech.Desktop.Shared.Abstractions;
+using RaefTech.Desktop.Shared.Services;
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Primitives;
+using RaefTech.Shared.Primitives;
 using SkiaSharp;
 using System.Drawing;
 using System.Runtime.InteropServices;
-using Remotely.Desktop.Native.Linux;
+using RaefTech.Desktop.Native.Linux;
 
-namespace Remotely.Desktop.Linux.Services;
+namespace RaefTech.Desktop.Linux.Services;
 
 public class ScreenCapturerLinux : IScreenCapturer
 {

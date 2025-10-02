@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Remotely.Server.Models;
+using RaefTech.Server.Models;
 
-namespace Remotely.Server.Services;
+namespace RaefTech.Server.Services;
 
 public interface IModalService
 {

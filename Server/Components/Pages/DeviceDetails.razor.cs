@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
 using Microsoft.AspNetCore.Components.Web;
-using Remotely.Server.Hubs;
-using Remotely.Server.Models.Messages;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
-using Remotely.Shared.Utilities;
+using RaefTech.Server.Hubs;
+using RaefTech.Server.Models.Messages;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
+using RaefTech.Shared.Utilities;
 using System.Collections.Concurrent;
 using System.Text.Json;
 
-namespace Remotely.Server.Components.Pages;
+namespace RaefTech.Server.Components.Pages;
 
 public partial class DeviceDetails : AuthComponentBase
 {

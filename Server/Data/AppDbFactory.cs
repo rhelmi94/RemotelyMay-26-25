@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.Data;
+﻿namespace RaefTech.Server.Data;
 
 public interface IAppDbFactory
 {

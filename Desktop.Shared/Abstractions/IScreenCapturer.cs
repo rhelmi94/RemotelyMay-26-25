@@ -1,8 +1,8 @@
-﻿using Remotely.Shared.Primitives;
+﻿using RaefTech.Shared.Primitives;
 using SkiaSharp;
 using System.Drawing;
 
-namespace Remotely.Desktop.Shared.Abstractions;
+namespace RaefTech.Desktop.Shared.Abstractions;
 
 public interface IScreenCapturer : IDisposable
 {

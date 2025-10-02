@@ -1,11 +1,11 @@
-using Remotely.Desktop.Shared.Enums;
-using Remotely.Desktop.Shared.Messages;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Shared.Enums;
+using RaefTech.Desktop.Shared.Messages;
+using RaefTech.Shared.Models;
 using Microsoft.Extensions.Logging;
 using Bitbound.SimpleMessenger;
 using System.Collections.Concurrent;
 
-namespace Remotely.Desktop.Shared.Services;
+namespace RaefTech.Desktop.Shared.Services;
 
 public interface IAppState
 {

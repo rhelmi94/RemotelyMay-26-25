@@ -1,10 +1,10 @@
 ﻿#nullable enable
 
 using Microsoft.Extensions.Logging;
-using Remotely.Shared.Utilities;
+using RaefTech.Shared.Utilities;
 using System.Collections.Concurrent;
 
-namespace Remotely.Shared.Services;
+namespace RaefTech.Shared.Services;
 
 public class FileLogger : ILogger
 {

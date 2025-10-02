@@ -1,5 +1,5 @@
-﻿using Remotely.Shared.Entities;
+﻿using RaefTech.Shared.Entities;
 
-namespace Remotely.Server.Models.Messages;
+namespace RaefTech.Server.Models.Messages;
 
 public record ScriptResultMessage(ScriptResult ScriptResult);

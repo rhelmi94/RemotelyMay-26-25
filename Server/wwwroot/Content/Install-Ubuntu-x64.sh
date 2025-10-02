@@ -3,12 +3,12 @@ HostName=
 Organization=
 GUID=$(cat /proc/sys/kernel/random/uuid)
 UpdatePackagePath=""
-InstallDir="/usr/local/bin/Remotely"
+InstallDir="/usr/local/bin/Raef Tech"
 
 apt-get update
 apt-get -y install curl
 
-ETag=$(curl --head $HostName/Content/Remotely-Linux.zip | grep -i "etag" | cut -d' ' -f 2)
+ETag=$(curl --head $HostName/Content/Raef Tech-Linux.zip | grep -i "etag" | cut -d' ' -f 2)
 LogPath="/var/log/remotely/Agent_Install.log"
 
 mkdir -p /var/log/remotely
@@ -65,17 +65,17 @@ mkdir -p $InstallDir
 
 if [ -z "$UpdatePackagePath" ]; then
     echo  "Downloading client." | tee -a $LogPath
-    wget -q -O /tmp/Remotely-Linux.zip $HostName/Content/Remotely-Linux.zip
+    wget -q -O /tmp/Raef Tech-Linux.zip $HostName/Content/Raef Tech-Linux.zip
 else
     echo  "Copying install files." | tee -a $LogPath
-    cp "$UpdatePackagePath" /tmp/Remotely-Linux.zip
+    cp "$UpdatePackagePath" /tmp/Raef Tech-Linux.zip
     rm -f "$UpdatePackagePath"
 fi
 
-unzip -o /tmp/Remotely-Linux.zip -d $InstallDir
-rm -f /tmp/Remotely-Linux.zip
-chmod +x $InstallDir/Remotely_Agent
-chmod +x $InstallDir/Desktop/Remotely_Desktop
+unzip -o /tmp/Raef Tech-Linux.zip -d $InstallDir
+rm -f /tmp/Raef Tech-Linux.zip
+chmod +x $InstallDir/Raef Tech_Agent
+chmod +x $InstallDir/Desktop/Raef Tech_Desktop
 
 
 connectionInfo="{
@@ -87,16 +87,16 @@ connectionInfo="{
 
 echo "$connectionInfo" > $InstallDir/ConnectionInfo.json
 
-curl --head $HostName/Content/Remotely-Linux.zip | grep -i "etag" | cut -d' ' -f 2 > $InstallDir/etag.txt
+curl --head $HostName/Content/Raef Tech-Linux.zip | grep -i "etag" | cut -d' ' -f 2 > $InstallDir/etag.txt
 
 echo Creating service. | tee -a $LogPath
 
 serviceConfig="[Unit]
-Description=The Remotely agent used for remote access.
+Description=The Raef Tech agent used for remote access.
 
 [Service]
 WorkingDirectory=$InstallDir
-ExecStart=$InstallDir/Remotely_Agent
+ExecStart=$InstallDir/Raef Tech_Agent
 Restart=always
 StartLimitIntervalSec=0
 RestartSec=10

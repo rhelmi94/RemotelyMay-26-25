@@ -1,10 +1,10 @@
-﻿using Remotely.Shared;
+﻿using RaefTech.Shared;
 using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace Remotely.Desktop.Core.Interfaces
+namespace RaefTech.Desktop.Core.Interfaces
 {
     public interface IScreenCapturer : IDisposable
     {

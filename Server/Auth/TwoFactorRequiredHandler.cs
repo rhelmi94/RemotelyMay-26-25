@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Remotely.Server.Models;
-using Remotely.Server.Services;
+using RaefTech.Server.Models;
+using RaefTech.Server.Services;
 using System.Security.Principal;
 
-namespace Remotely.Server.Auth;
+namespace RaefTech.Server.Auth;
 
 public class TwoFactorRequiredHandler(
     IHttpContextAccessor _contextAccessor,

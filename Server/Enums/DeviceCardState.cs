@@ -1,4 +1,4 @@
-﻿namespace Remotely.Server.Enums;
+﻿namespace RaefTech.Server.Enums;
 
 public enum DeviceCardState
 {

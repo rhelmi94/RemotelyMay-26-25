@@ -1,4 +1,4 @@
-﻿namespace Remotely.Desktop.Shared.Abstractions;
+﻿namespace RaefTech.Desktop.Shared.Abstractions;
 
 public interface IShutdownService
 {

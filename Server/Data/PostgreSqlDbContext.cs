@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Npgsql;
 
-namespace Remotely.Server.Data;
+namespace RaefTech.Server.Data;
 
 public class PostgreSqlDbContext : AppDb
 {

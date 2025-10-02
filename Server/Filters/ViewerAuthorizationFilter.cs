@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Remotely.Server.Services;
+using RaefTech.Server.Services;
 
-namespace Remotely.Server.Filters;
+namespace RaefTech.Server.Filters;
 
 internal class ViewerAuthorizationFilter(
     IDataService _dataService,

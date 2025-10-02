@@ -1,10 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Remotely.Desktop.Core.Enums;
-using Remotely.Desktop.Core.Interfaces;
-using Remotely.Desktop.Core.Models;
-using Remotely.Desktop.Core.Utilities;
-using Remotely.Shared.Utilities;
-using Remotely.Shared.Models;
+using RaefTech.Desktop.Core.Enums;
+using RaefTech.Desktop.Core.Interfaces;
+using RaefTech.Desktop.Core.Models;
+using RaefTech.Desktop.Core.Utilities;
+using RaefTech.Shared.Utilities;
+using RaefTech.Shared.Models;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using SkiaSharp;
 
-namespace Remotely.Desktop.Core.Services
+namespace RaefTech.Desktop.Core.Services
 {
     public interface IScreenCaster
     {

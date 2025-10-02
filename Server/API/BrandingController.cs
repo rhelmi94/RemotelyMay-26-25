@@ -1,9 +1,9 @@
-﻿using Remotely.Shared.Extensions;
+﻿using RaefTech.Shared.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using Remotely.Server.Services;
-using Remotely.Shared.Entities;
+using RaefTech.Server.Services;
+using RaefTech.Shared.Entities;
 
-namespace Remotely.Server.API;
+namespace RaefTech.Server.API;
 
 [Route("api/[controller]")]
 [ApiController]
